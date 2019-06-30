@@ -1,0 +1,61 @@
+.p-news{ padding-top:20px;}
+.nav-son{background: #f8f8f8;height: 46px;border-bottom: 1px solid #dbdbdb;font-size: 14px;}
+.nav-son li{float: left;height: 46px;margin: 0;line-height: 46px;text-align: center;margin-right: 15px;}
+.first .news{ width:460px; overflow:hidden;}
+.first .news .hot{white-space:nowrap;word-break: break-all;text-overflow: ellipsis;height: 30px;text-align: center;margin-bottom: 6px;font-size:20px; font-weight:bold; overflow:hidden;}
+.first .news .hot a{ color:#ff5203;}
+.first .news .news-img{margin-bottom: 8px;}
+.first .news .news-img dt{float:left;width: 156px;height:106px;margin-right: 10px;}
+.first .news .news-img dd{ float:left; margin-top:-6px;}
+.first .news .news-img dd p{width:290px;height: 30px;line-height: 30px;font-size: 14px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;word-break: break-all;}
+.first .news-swiper{ position:relative; width:380px; height:282px; margin-right:20px; overflow:hidden;}
+.first .news-swiper img{ width:380px; height:282px;}
+.m-list-new{ margin-bottom:20px;}
+.m-list-new .tab-hd{height: 40px;line-height: 40px; font-size:18px; color:#333;}
+.m-list-new .tab-hd .tit{ font-weight:normal;}
+.m-list-new .bd li{padding: 20px 15px;border-bottom: 1px dotted #e0e0e0;font-size:14px;zoom:1;}
+.m-list-new .bd li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.m-list-new .bd li .img{ float:left;width: 156px;height: 106px;margin-right:10px; overflow:hidden;}
+.m-list-new .bd li .tit{ margin-bottom:5px;font-size: 18px; font-weight:400;}
+.m-list-new .bd li .tit .icon-hot{ font-size:12px; background:#f60; color:#fff; padding:2px 5px; border-radius:2px; margin-left:10px;}
+.m-list-new .bd li a{ color:#666;}
+.m-list-new .bd li .time{ margin-top:5px; text-align:right;color:#999;}
+.m-list-new .bd li .time .tb-icon{ padding-left:20px; background-position:-142px 3px;}
+.m-list-new .bd li .time a{ margin-left:10px; color:#999;}
+.m-list-new .bd li:hover{background:#f8f8f8;}
+.m-list-new .bd li:hover .tit a{ color:#f60;}
+.m-list-new .bd li:hover .time a{ color:#333;}
+.m-list-new .bd li:hover .time .tb-icon{ background-position:-142px -21px;}
+.m-list-new .bd li .time a:hover{color:#f60; text-decoration:underline;}
+.m-list-new .more{ display:block; height:40px; line-height:40px; margin-top:20px; text-align:center; background:#f8f8f8; color:#999;}
+.m-list-new .more:hover{ color:#f60;}
+.sdc-new-list dl{font-size:14px;margin-bottom:20px;}
+.sdc-new-list dt{ margin-bottom:10px; overflow:hidden;}
+.sdc-new-list dt .tit{ height:30px; line-height:30px; overflow:hidden;}
+.sdc-new-list dt .info{ height:80px;overflow: hidden;}
+.sdc-new-list dt .img{ float:left;margin-right:10px;}
+.sdc-new-list dd{ position:relative;height:30px;line-height:30px; padding-left:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-break:break-all}
+.sdc-new-list dd:after{ content:""; display:block; position:absolute; left:0; top:50%; margin-top:-1px; width:3px; height:3px; background:#aaa;}
+.g-sd .qrcode{ border:1px solid #ddd; padding:5px; overflow:hidden;}
+.g-sd .adv{ width:100%; overflow:hidden;}
+
+.m-list-new .tag-list li .time a{ color:#f60;}
+.m-list-new .tag-list li:hover .time a{ color:#f60;}
+
+.enter-dy{ background:#f9f9f9; padding:20px 0 20px 20px; margin-bottom:20px; }
+.enter-dy .enter-tit{ font-size:20px; color:#333; }
+.enter-dy .enter-tit span{ font-size:14px; color:#999; }
+.enter-dy .enter-desc{ margin-top:20px; }
+.enter-dy .enter-desc p{ line-height:30px; }
+.enter-dy .enter-ck{ overflow:hidden; padding-top:10px; }
+.enter-dy .enter-ck li{ float:left; margin:20px 10px 0 0;}
+.enter-dy .enter-ck input{ vertical-align:middle; }
+.enter-dy .enter-ck label{ color:#666; cursor:pointer; }
+.enter-dy .enter-form .tel{ margin:20px 20px 0 0; border:#ddd 1px solid; border-radius:4px; }
+.enter-dy .enter-form .tel input{ width:100%; height:48px; text-indent:10px; font-size:14px; border:none; border-radius:4px; }
+.enter-dy .enter-form .xy{ margin:20px 0 0 0; line-height:20px; height:20px;}
+.enter-dy .enter-form .xy input{ vertical-align:middle; }
+.enter-dy .enter-form .xy span{ color:#666; }
+.enter-dy .enter-form .xy a{ color:#1b71e0; }
+.enter-dy .enter-form .btn{ margin:20px 20px 0 0; }
+.enter-dy .enter-form .btn button{ width:100%; border:none; height:48px; font-size:18px; color:#fff; background:#fe6200; border-radius:4px; }

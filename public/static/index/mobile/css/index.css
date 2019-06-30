@@ -1,0 +1,111 @@
+.header-index{ display:flex; display:-webkit-flex; padding:20px 32px; }
+.header-index .logo{ overflow:hidden; padding-right:20px; }
+.header-index .logo a{ display:block; width:108px; min-width:108px; height:40px; background:url(../images/logo_w164_h60.png); background-size:cover; margin-top:12px; }
+.header-index .search{ display:flex; display:-webkit-flex; flex:auto; -webkit-flex:auto; }
+.header-index .search a{ display:block; line-height:64px; margin-right:20px; position:relative; padding-right:44px; }
+.header-index .search a::after{ content:''; position:absolute; width:24px; height:14px; background:url(../images/icon.png) -40px 0; margin:auto; right:0; top:0; bottom:0; }
+.header-index .search p{ flex:auto; -webkit-flex:auto; background:#eee; height:64px; line-height:64px; border-radius:32px; text-indent:20px; color:#999; position:relative; }
+.header-index .search p::after{ content:''; position:absolute; width:32px; height:32px; background:url(../images/icon.png) -230px 0; margin:auto; top:0; right:20px; bottom:0; }
+.pages-index{ padding-bottom:88px; }
+/* banner */
+.banner{ position:relative; }
+.banner::after{ content:''; position:absolute; font-size:20px; background:rgba(0, 0, 0, 0.1); top:0; right:0; line-height:32px; color:#fff; z-index:9; padding:0 4px; }
+.banner a{ display:block; width:100%; height:340px; overflow:hidden; }
+.banner img{ width:100%; height:100%; object-fit:cover; }
+/* menu */
+.swiper-menu .menu{ display:flex; display:-webkit-flex; flex-wrap:wrap; -webkit-flex-wrap:wrap; padding-bottom:40px; }
+.swiper-menu .item{ width:25%; flex:auto; -webkit-flex:auto; padding-top:40px; }
+.swiper-menu .item span{ display:block; width:100px; height:100px; margin:0 auto; background:url(../images/menu.png); }
+.swiper-menu .item p{ text-align:center; line-height:40px; margin-top:20px; }
+.swiper-menu .item-xf span{ background-position:0 0; }
+.swiper-menu .item-sydc span{ background-position:-100px 0; }
+.swiper-menu .item-esf span{ background-position:-200px 0; }
+.swiper-menu .item-zf span{ background-position:-300px 0; }
+.swiper-menu .item-zx span{ background-position:0 -100px; }
+.swiper-menu .item-zixun span{ background-position:-100px -100px; }
+.swiper-menu .item-wd span{ background-position:-200px -100px; }
+.swiper-menu .item-fdjsq span{ background-position:-300px -100px; }
+.swiper-menu .item-grzx span{ background-position:0 -200px; }
+.swiper-menu .item-xq span{ background-position:-100px -200px; }
+.swiper-menu .item-tgbm span{ background-position:-200px -200px; }
+.swiper-menu .item-bk span{ background-position:-300px -200px; }
+.swiper-menu .item-fczs span{ background-position:0 -300px; }
+.swiper-menu .item-gfzn span{ background-position:-100px -300px; }
+.swiper-menu .item-fj span{ background-position:-200px -300px; }
+.swiper-menu .item-lpzs span{ background-position:-300px -300px; }
+.swiper-menu .item-sc span{ background-position:0 -400px; }
+.swiper-menu .item-wymf span{ background-position:-100px -400px; }
+.swiper-menu .item-wyzf span{ background-position:-200px -400px; }
+.swiper-menu .item-new{ position:relative; }
+.swiper-menu .item-new::after{ content:''; position:absolute; width:62px; height:31px; background:url(../images/icon.png) -160px -50px; top:20px; right:20px; }
+/* 新闻滚动区 */
+.newsRoll{ padding:20px 32px 40px; display:flex; display:-webkit-flex; overflow:hidden; }
+.newsRoll .img{ width:110px; min-width:110px; height:88px; position:relative; }
+.newsRoll .img::before{ content:''; position:absolute; width:80px; height:84px; background:url(../images/icon.png) -70px 0; left:0; top:0; bottom:0; margin:auto; }
+.newsRoll .img::after{ content:''; position:absolute; width:2px; height:72px; background:#ccc; margin:auto; top:0; bottom:0; right:0; }
+.newsRoll .list{ flex:auto; -webkit-flex:auto; overflow:hidden; height:88px; position:relative; }
+.newsRoll .list-wrap{ position:absolute; width:100%; left:0; top:0; }
+.newsRoll .list a{ display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:44px; text-indent:40px; position:relative; }
+.newsRoll .list a::before{ content:''; position:absolute; width:6px; height:6px; border-radius:50%; background:#ccc; left:20px; top:0; bottom:0; margin:auto; }
+/* 新房行情 */
+.quotation{ border-top:#f6f6f6 20px solid; background:#fff; overflow:hidden; }
+.quotation h2{ font-size:32px; line-height:40px; text-indent:54px; position:relative; margin-top:28px; }
+.quotation h2::before{ content:''; position:absolute; width:4px; height:32px; background:#1bac6d; left:32px; top:0; bottom:0; margin:auto; }
+.quotation .block{ margin:40px 0; display:flex; display:-webkit-flex; position:relative; }
+.quotation .block::before{ content:''; position:absolute; width:1px; height:80px; background:#ccc; margin:auto; top:0; bottom:0; left:0; right:0; }
+.quotation .block > div{ flex:1; -webkit-flex:1; }
+.quotation .price p{ font-size:44px; color:#fe6816; line-height:60px; height:60px; text-align:center; }
+.quotation .price p i{ font-style:normal; font-size:24px; color:#fe6816; }
+.quotation .price span{ font-size:24px; display:block; text-align:center; color:#999; line-height:40px; }
+.quotation .percent p{ font-size:44px; color:#fe6816; line-height:60px; height:60px; text-align:center; }
+.quotation .percent p i{ font-style:normal; font-size:44px; color:#fe6816; }
+.quotation .percent span{ font-size:24px; display:block; text-align:center; color:#999; line-height:40px; }
+/* 报名 */
+.enter{ border-top:#f6f6f6 20px solid; padding:24px 32px; overflow:hidden; display:flex; display:-webkit-flex; }
+.enter .txt{ flex:auto; -webkit-flex:auto; overflow:hidden; }
+.enter .tit{ font-size:32px; line-height:40px; height:40px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.enter .tit span{ font-size:32px; color:#30a15d; }
+.enter .desc{ color:#999; line-height:40px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.enter .btn{ overflow:hidden; }
+.enter .btn a{ display:block; width:180px; min-width:180px; line-height:64px; background:#30a15d; color:#fff; font-size:32px; text-align:center; margin-top:8px; border-radius:8px; }
+/* 新房 二手房 租房 */
+.houseList{ border-top:#f6f6f6 20px solid; background:#fff; overflow:hidden; }
+.houseList h2{ font-size:32px; line-height:40px; text-indent:54px; position:relative; margin-top:28px; }
+.houseList h2::before{ content:''; position:absolute; width:4px; height:32px; background:#1bac6d; left:32px; top:0; bottom:0; margin:auto; }
+.houseList .item-box{ position:relative; }
+.houseList .item{ display:flex; display:-webkit-flex; overflow:hidden; padding:28px 0px; margin:0 32px; border-bottom:#e9eaee 1px solid; }
+.houseList .img{ width:220px; min-width:220px; height:180px; }
+.houseList .img img{ width:100%; height:100%; object-fit:cover; }
+.houseList .text{ padding-left:20px; overflow:hidden; flex:auto; -webkit-flex:auto; }
+.houseList h3{ overflow:hidden; font-weight:normal; }
+.houseList .tit{ font-size:32px; line-height:40px; float:left; }
+.houseList h3 span{ float:left; width:32px; height:32px; background:url(../images/icon.png) 0 -40px; margin:4px 0 0 8px; }
+.houseList .address{ font-size:24px; color:#999; line-height:40px; margin-top:6px; }
+.houseList .tags{ overflow:hidden; height:40px; margin-top:6px; }
+.houseList .tags span{ float:left; line-height:36px; margin:2px 16px 0 0; background:#ecf0f3; color:#999; font-size:24px; border-radius:4px; padding:0 8px; }
+.houseList .tags p{ float:left; line-height:36px; margin:2px 16px 0 0; color:#999; font-size:24px; }
+.houseList .other{ overflow:hidden; display:flex; display:-webkit-flex; }
+.houseList .price{ flex:auto; -webkit-flex:auto; font-size:32px; color:#fe6816; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:48px; }
+.houseList .more{ text-align:center; display:block; }
+.houseList .more p{ display:inline-block; vertical-align:middle; line-height:80px; font-size:32px; position:relative; }
+.houseList .more p::after{ content:''; position:absolute; width:0; height:0; border-top:transparent 8px solid; border-bottom:transparent 8px solid; border-left:#e1e2e6 8px solid; margin:auto; top:0; right:-16px; bottom:0; }
+.houseList .btn{ position:absolute; right:32px; bottom:28px; }
+.houseList .btn .button{ width:200px; height:48px; line-height:46px; color:#30a15d; font-size:28px; border:#30a15d 1px solid; background:transparent; border-radius:8px; text-align:left; text-indent:60px; position:relative; }
+.houseList .btn .button::before{ content:''; position:absolute; width:30px; height:30px; background:url(../images/icon.png); left:12px; top:0; bottom:0; margin:auto; }
+/* 房产资讯 问答 */
+.iNews{ border-top:#f6f6f6 20px solid; background:#fff; overflow:hidden; }
+.iNews h2{ font-size:32px; line-height:40px; text-indent:54px; position:relative; margin-top:28px; }
+.iNews h2::before{ content:''; position:absolute; width:4px; height:32px; background:#1bac6d; left:32px; top:0; bottom:0; margin:auto; }
+.iNews .item{ display:flex; display:-webkit-flex; overflow:hidden; padding:28px 32px; border-bottom:#e9eaee 1px solid; }
+.iNews .img{ width:220px; min-width:220px; height:168px; }
+.iNews .img img{ width:100%; height:100%; object-fit:cover; }
+.iNews .text{ padding-left:20px; overflow:hidden; flex:auto; -webkit-flex:auto; }
+.iNews .tit{ font-size:32px; line-height:40px; display:-webkit-box; overflow:hidden; -webkit-box-orient:vertical; -webkit-line-clamp:2; }
+.iNews .date{ font-size:24px; line-height:40px; margin-top:4px; color:#999; }
+.iNews .tag{ color:#999; font-size:24px; line-height:40px; margin-top:4px; position:relative; text-indent:28px; }
+.iNews .tag::before{ content:''; position:absolute; width:22px; height:24px; background:url(../images/icon.png) -40px -40px; margin:auto; left:0; top:0; bottom:0; }
+.iNews .msg{ color:#999; font-size:24px; line-height:40px; margin-top:4px; position:relative; text-indent:28px; }
+.iNews .msg::before{ content:''; position:absolute; width:22px; height:22px; background:url(../images/icon.png) -160px 0; margin:auto; left:0; top:0; bottom:0; }
+.iNews .more{ text-align:center; display:block; }
+.iNews .more p{ display:inline-block; vertical-align:middle; line-height:80px; font-size:32px; position:relative; }
+.iNews .more p::after{ content:''; position:absolute; width:0; height:0; border-top:transparent 8px solid; border-bottom:transparent 8px solid; border-left:#e1e2e6 8px solid; margin:auto; top:0; right:-16px; bottom:0; }

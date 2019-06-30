@@ -1,0 +1,44 @@
+/*new footer*/
+.footer_new {width: 100%;padding-top: 10px; padding-bottom: 10px;background-color: #fff; }
+.footer_new p{
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 5px;
+    text-indent:0;
+    line-height: initial;
+}
+.footer_new p img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    float:none;
+}
+/* 老顶部header, 目前在新闻等页使用 */
+.apply-top a.apply-return {
+     margin-right: 0;
+}
+.apply-top div.logo {
+    display: block;
+    float: left;
+    width: 70%;
+    text-align: center;
+}
+.apply-top div.logo a {
+    text-indent: unset;
+    width: 100%;
+}
+.apply-top div.logo a img {
+    margin: 3px auto;
+    display: block;
+    width: 128px;
+    height: 44px;
+}
+/* 改版后的header, 知识页面使用, http://m.loupan.my/zhishi/ */
+header .center img {display: inline-block; width: 128px; height: 44px; margin-top: 3px;}
+/*header .left, header .right{width: 80px;}*/
+/*.header-inner .menu{width: 100%;}*/

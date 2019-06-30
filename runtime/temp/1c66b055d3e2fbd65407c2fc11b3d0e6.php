@@ -1,0 +1,118 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\phpStudy\PHPTutorial\WWW\lou/application/index\view\article\m_index.html";i:1561899684;}*/ ?>
+<!doctype html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="shortcut icon" href="/public/static/index/mobile/css/favicon_82dd71d55d9945dbb20d6fb67597d144.ico">
+  <meta name="viewport" content="width=device-width ,initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="canonical" href="/public/static/index/mobile/css/null_083f35fd9fa744d0847add13d6020f05.">
+  <title>广州房产楼讯_广州楼市-广州楼盘网</title>
+  <meta name="Keywords" content="广州楼市,广州房产楼讯,广州房地产信息">
+  <meta name="description" content="楼盘网广州房产楼讯频道提供最新最全面的广州楼市信息、广州房地产信息及房地产热点楼讯等等。">
+  <link rel="stylesheet" media="all" href="/public/static/index/mobile/css/head_n.css">
+  <link rel="stylesheet" media="all" href="/public/static/index/mobile/css/footer.css">
+  <link rel="stylesheet" media="all" href="/public/static/index/mobile/css/m_new.css">
+  <link rel="stylesheet" media="all" href="/public/static/index/mobile/css/article.css">
+  <link rel="stylesheet" media="all" href="/public/static/index/mobile/css/swiper.min.css">
+  <link rel="stylesheet" media="all" href="/public/static/index/mobile/css/new_footer.css">
+  <script type="text/javascript" src="/public/static/index/mobile/js/jquery.min.js"></script>
+  <style> .second-tags-scroll{ padding:0 10px; } .second-tags-scroll .swiper-slide a{ display:block; width:100%; font-size:14px; line-height:50px; text-align:center; } .second-tags-scroll .swiper-slide.current a{ color:#0D7AD9; } </style>
+ </head>
+ <body style="font-size:62.5%">
+  <!--head s-->
+  <div class="apply-nav overflow mg-auto area clearfix">
+   <div class="overflow clearfix apply-top border-bom" style="height:3.3rem">
+    <a href="/gz/" class="apply-return">返回</a>
+    <div class="logo">
+     <a href="/gz/"><img src="/public/static/index/mobile/images/top_logo_white.png" alt="logo"></a>
+    </div>
+    <a href="#" class="apply-pup">弹出</a>
+   </div>
+   <div class="i-icon mg-auto overflow area clearfix" id="apply-pup-icon">
+    <h2>频道导航</h2>
+    <ul class="clearfix">
+     <li><a href="/">首页</a></li>
+     <li><a href="/index/build/index?type=0">新房</a></li>
+     <li><a href="/index/build/index?type=1">商业地产</a></li>
+     <li><a href="/index/article/index">楼讯</a></li>
+     <li><a href="/index/enlist/index">帮你找房</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="clear"></div>
+  <!--幻灯片 开始-->
+  <article>
+   <!--scroll-->
+   <div class="scroll relative">
+    <div class="scroll_box" id="scroll_img">
+     <ul class="scroll_wrap">
+      <?php foreach($articles as $key=>$article): if($key==0 || $key==1): ?>
+      <li><a href="/"><img src="<?php echo $article->img; ?>" alt="<?php echo $article->title; ?>" width="100%" ></a>
+       <div class="title_jdt1">
+        <?php echo $article->title; ?>
+       </div>
+      </li>
+      <?php endif; endforeach; ?>
+     </ul>
+    </div>
+    <ul class="scroll_position" id="scroll_position" style="margin-top: -18px;">
+     <li class="on"><a href="javascript:void(0);">1</a></li>
+     <li><a href="javascript:void(0);">2</a></li>
+    </ul>
+   </div>
+   <!--scroll-->
+  </article>
+  <div class="clear"></div>
+  <div class="news_box">
+   <div class="second-tags-scroll">
+    <div class="swiper-container" id="data_tab1">
+     <div class="swiper-wrapper">
+      <?php foreach($types as $key=>$type): ?>
+      <div class="swiper-slide current">
+       <a style="border:none" href="/" title="<?php echo $type->name; ?>"><?php echo $type->name; ?></a>
+      </div>
+      <?php endforeach; ?>
+
+     </div>
+    </div>
+   </div>
+   <div class="market-p" id="data_box1_0">
+    <ul id="news_list">
+    <?php foreach($articles as $key=>$article): ?>
+     <li><a href="/index/article/detail?id=<?php echo $article->id; ?>"><img alt="" src="<?php echo $article->img; ?>" width="100" height="70"><h1><?php echo $article->title; ?><span>推荐<span></span></span></h1><p><span>xx</span><span><?php echo $article->create_time; ?></span></p></a>
+     </li>
+     <?php endforeach; ?>
+    </ul>
+   </div>
+   <div id="more">
+    <input type="hidden" id="next_page" value="2">
+    <input type="hidden" id="site_id" value="">
+    <input type="hidden" id="category_id" value="">
+    <input type="hidden" id="is_position" value="">
+    
+<!--     <div class="loading" id="loading" style="display: none;">
+     <a href="javascript:;" id="showtext">加载中<span></span></a>
+    </div> -->
+   </div>
+  </div>
+  <a href="javascript:;" id="backTop" style="bottom:60px"></a>
+  <div class="clear"></div>
+  <!-- 新添脚部-->
+  <div class="footer_new">
+   <p>Copyright 广州楼盘网网络技术有限公司</p>
+   <p>全国统一服务热线 4008180066转111666 | 邮箱：cs@LouPan.com</p>
+   <p>经营性ICP证： 湘ICP备12003586号-55</p>
+   <p><img src="/public/static/index/mobile/images/gh.png" alt="gh">湘公网安备 43019002000309(湖南创业工场网络科技有限公司)</p>
+   <p>增值电信业务经营许可证：湘B2-20130102</p>
+  </div>
+
+  <script src="/public/static/index/mobile/js/swiper.jquery.min.js"></script>
+  <script type="text/javascript" src="/public/static/index/mobile/js/news.js"></script>
+  <script type="text/javascript" src="/public/static/index/mobile/js/hhSwipe.js"></script>
+  <script type="text/javascript" src="/public/static/index/mobile/js/com.js"></script>
+  <script> /** * 滚动菜单 */ if ($('#scroll_img')[0]) { var slider = Swipe(document.getElementById('scroll_img'), { auto: 3000, continuous: true, callback: function (pos) { var i = bullets.length; while (i--) { bullets[i].className = ' '; } bullets[pos].className = 'on'; } }); var bullets = document.getElementById('scroll_position').getElementsByTagName('li'); $(function () { $('.scroll_position_bg').css({ width: $('#scroll_position').width() }); }); } $("#backTop").click(function(){ window.scrollTo(0,1); }); var defualtNumer = (function(){ var list = $('.second-tags-scroll .swiper-container .swiper-slide'); var n = 0; list.each(function(){ var that = $(this); if(that.hasClass('current')) { n = that.index(); } }); return n; })(); var myNav = new Swiper('.second-tags-scroll .swiper-container',{ slidesPerView : 4, initialSlide : defualtNumer }); </script>
+
+ </body>
+</html>

@@ -1,0 +1,333 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\phpStudy\PHPTutorial\WWW\lou/application/index\view\build\m_show.html";i:1561904498;}*/ ?>
+<!doctype html>
+<html lang="zh-cn">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta content="yes" name="apple-mobile-web-app-capable"> 
+  <meta content="yes" name="apple-touch-fullscreen"> 
+  <meta content="telephone=no" name="format-detection"> 
+  <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no, viewport-fit=cover"> 
+  <title>广州越秀滨海新城_楼盘房价_户型详情_周边配套-广州楼盘网</title> 
+  <meta name="Keywords" content="越秀滨海新城,越秀滨海新城房价"> 
+  <meta name="description" content="广州越秀滨海新城售楼电话(400-819-6579)，广州楼盘网新房频道为您提供越秀滨海新城房价走势、开盘日期、项目地址、团购优惠、户型图等动态。了解更多广州越秀滨海新城楼盘详情上广州楼盘网！"> 
+  <link rel="canonical" href="/public/static/index/mobile/css/7031803.html"> 
+  <!-- 此js必须在head标签里面 --> 
+  <script src="/public/static/index/mobile/js/flexible_css.js"></script> 
+  <script src="/public/static/index/mobile/js/flexible.js"></script> 
+  <link rel="stylesheet" href="/public/static/index/mobile/css/swiper.min.css"> 
+  <link rel="stylesheet" href="/public/static/index/mobile/css/base.css"> 
+  <link rel="stylesheet" href="/public/static/index/mobile/css/xinfang.css"> 
+  <link rel="stylesheet" href="/public/static/index/mobile/css/new_footer.css"> 
+ </head> 
+ <body> 
+  <div class="pages pages-lpxq"> 
+   <!-- header --> 
+   <header class="header-inner"> 
+    <div class="left"> 
+     <a href="javascript:window.history.back();" class="back"></a> 
+    </div> 
+    <div class="center">
+     <a href="http://m.loupan.com/gz/"><img src="/public/static/index/mobile/images/top_logo.png" alt="logo"></a>
+    </div> 
+    <div class="right"> 
+     <a href="javascript:;" class="menu" id="showMenu"></a> 
+    </div> 
+   </header> 
+
+   <!-- banner --> 
+   <div class="swiper-container banner"> 
+    <div class="swiper-wrapper">
+      <?php foreach($imgs as $img): ?>
+     <div class="swiper-slide"> 
+      <a href="/index/build/image?id=<?php echo $build->id; ?>"> <img src="<?php echo $img->img; ?>" alt="楼盘图"> </a> 
+     </div> 
+     <?php endforeach; ?>
+    </div> 
+    <div class="swiper-pagination"></div> 
+    <div class="num">
+     共x张
+    </div> 
+   </div> 
+   <!-- 基础信息 --> 
+   <div class="baseInfo"> 
+    <div class="tit"> 
+     <h1><?php echo $build->name; ?></h1> 
+<!--      <div class="tag"> 
+      <span class="tag-1">现房</span> 
+      <span class="tag-2">在售</span> 
+     </div>  -->
+    </div> 
+    <div class="label"> 
+     <span><?php echo $build->item; ?></span> 
+ 
+    </div> 
+
+    <div class="other"> 
+     <span>价格：</span> 
+     <p class="price"><?php echo $build->start_price; ?></p> 
+    </div> 
+    <div class="open">
+     开盘： <?php echo $build->start_time; ?> 
+    </div> 
+    <div class="address">
+     地址：<?php echo $build->address; ?>
+    </div> 
+    <div class="btn"> 
+     <a href="/index/build/more?id=<?php echo $build->id; ?>">更多信息</a> 
+    </div> 
+    <div class="notice"> 
+
+    </div> 
+   </div> 
+   <!-- 免费电话 --> 
+   <div class="freePhone"> 
+    <div class="phone"> 
+     <p><?php echo $build->telephone; ?></p> 
+     <span>免费致电了解详情</span> 
+     <i class="mobileTel" data-value="<?php echo $build->telephone; ?>"></i> 
+    </div> 
+   </div> 
+
+   <!-- 最新动态 --> 
+   <div class="detail-block dongtai floatTop-item"> 
+    <div class="tit"> 
+     <p>最新动态</p> 
+     <a href="/index/Buildarticle/index?id=<?php echo $build->id; ?>">更多&gt;&gt;</a> 
+    </div> 
+    <div class="list"> 
+      <?php foreach($buildarticles as $article): ?>
+    <a href="/index/article/detail?id=<?php echo $article->id; ?>" class="item"> 
+      <div class="t">
+       <?php echo $article->title; ?>
+      </div> 
+        <?php
+            $string = $article->content;
+
+            //把一些预定义的 HTML 实体转换为字符
+
+            $html_string = htmlspecialchars_decode($string);
+
+            //将空格替换成空
+
+            $content = str_replace(" ", "", $html_string);
+
+            //函数剥去字符串中的 HTML、XML 以及 PHP 的标签,获取纯文本内容
+
+            $contents = strip_tags($content);
+
+            //返回字符串中的前80字符串长度的字符
+
+            $content = mb_substr($contents, 0, 50, "utf-8");
+          ?>
+      <div class="text">
+       <?php echo $content; ?>
+      </div> 
+      <div class="other"> 
+       <div class="date">
+        <?php echo $article->create_time; ?>
+       </div> 
+      </div> 
+    </a> 
+    <?php endforeach; ?>
+    </div> 
+
+   </div> 
+   <!-- 主力户型 --> 
+   <div class="detail-block huxing floatTop-item"> 
+    <div class="tit"> 
+     <p>主力户型(17)</p> 
+     <a href="/index/Buildtype/index?id=<?php echo $build->id; ?>">更多&gt;&gt;</a> 
+    </div> 
+    <div class="swiper-container"> 
+     <div class="swiper-wrapper">
+      <?php foreach($houses as $house): ?>
+      <div class="swiper-slide"> 
+       <a href="/index/buildtype/detail?id=<?php echo $house->id; ?>" class="item"> 
+        <div class="img"> 
+         <img src="<?php echo $house->img; ?>" alt="<?php echo $house->house; ?>"> 
+        </div> 
+        <div class="text"> 
+         <p><?php echo $house->house; ?></p> 
+        </div> 
+        <div class="size">
+         <?php echo $house->build_s; ?>
+        </div>
+      </a> 
+      </div> 
+      <?php endforeach; ?>
+     </div> 
+    </div> 
+
+   </div> 
+   <!-- 价格走势 --> 
+   <div class="detail-block priceTrend" style="display:none"> 
+    <div class="tit"> 
+     <p>价格走势</p> 
+    </div> 
+    <div class="trend" id="trend"></div> 
+    <div class="items"> 
+     <p>越秀滨海新城</p> 
+     <p>南沙</p> 
+     <p>广州</p> 
+    </div> 
+    <div class="btn"> 
+     <button class="test-enter" data-id="24993" data-site_id="34" data-house_id="7031803" data-need_idcard="0" data-title="价格变动通知" data-desc="价格变动太快？订阅价格变动通知，实时价格一手掌握，抓准买房最佳时机">最新变价通知</button> 
+    </div> 
+   </div> 
+
+   <!-- 推荐楼盘 --> 
+   <div class="detail-block tuijian"> 
+    <div class="tit"> 
+     <p>热门楼盘</p> 
+    </div> 
+    <div class="list"> 
+      <?php foreach($hot_builds as $hot): ?>
+     <div class="item"> 
+      <a href="/index/build/index?id=<?php echo $hot->id; ?>"> 
+       <div class="img"> 
+        <img src="<?php echo $hot->img; ?>" alt="<?php echo $hot->name; ?>"> 
+       </div> 
+       <div class="text"> 
+        <div class="t"> 
+         <p><?php echo $hot->name; ?></p> 
+        </div> 
+        <div class="address"><?php echo $hot->address; ?></div> 
+<!--         <div class="tags"> 
+         <span>现房</span> 
+        </div>  -->
+        <div class="other"> 
+         <p> <?php echo $hot->start_price; ?> </p> 
+         <span class="mobileTel" data-value="<?php echo $hot->telephone; ?>">售楼热线 </span> 
+        </div> 
+       </div> </a> 
+     </div> 
+     <?php endforeach; ?>
+    </div> 
+    <div class="more"> 
+     <a href="/index/build/index">更多推荐楼盘 &gt;</a> 
+    </div> 
+   </div> 
+
+   <!-- 热门链接 --> 
+   <div class="hotBottomLink"> 
+    <ul class="tab-head"> 
+     <li class="active">热门城市</li> 
+     <li>推荐楼盘</li> 
+     <li>房产知识</li> 
+     <li>综合推荐</li> 
+    </ul> 
+    <ul class="tab-body"> 
+     <!-- 热门城市 --> 
+     <li class="active"> 
+      <a href="http://m.loupan.com/sh/">上海房产网</a> 
+      <a href="http://m.loupan.com/sz/">深圳房产网</a> 
+      <a href="http://m.loupan.com/wh/">武汉房产网</a>
+    </li> 
+     <!-- 推荐楼盘 --> 
+     <li> 
+      <a href="http://m.loupan.com/gz/loupan/7077620/">中海联睿品</a> 
+      <a href="http://m.loupan.com/gz/loupan/7090814/">美的云筑</a> 
+      <a href="http://m.loupan.com/gz/loupan/7031788/">越秀国际总部广场</a>
+    </li> 
+     <!-- 专题链接 --> 
+     <li> <a href="http://m.loupan.com/zhuanti/1">准备</a> 
+      <a href="http://m.loupan.com/zhuanti/3">看房/选房</a> 
+      <a href="http://m.loupan.com/zhuanti/4">认购</a>
+    </li> 
+     <!-- 综合推荐 --> 
+     <li> <a href="http://m.loupan.com/gz/loupan/">新房</a> 
+      <a href="http://m.loupan.com/gz/esf/p1/">二手房</a> 
+      <a href="http://m.loupan.com/gz/zu/p1/">租房</a> 
+    </li> 
+    </ul> 
+   </div> 
+<!--    <div class="disclaimer"> 
+    <p>免责声明：楼盘信息由开发商提供，最终以政府部门登记备案为准，请谨慎核查，如该楼盘信息有误，您可以拨打投诉电话：4008197089 转 9999。</p> 
+   </div>  -->
+   <!--    新添脚部--> 
+   <div class="footer_new"> 
+    <p>Copyright 广州楼盘网网络技术有限公司</p> 
+    <p>全国统一服务热线 4008180066转111666 | 邮箱：cs@LouPan.com</p> 
+    <p>经营性ICP证： 湘ICP备12003586号-55</p> 
+    <p><img src="/public/static/index/mobile/images/gh.png" alt="gh">湘公网安备 43019002000309(湖南创业工场网络科技有限公司)</p> 
+    <p>增值电信业务经营许可证：湘B2-20130102</p> 
+   </div> 
+  </div> 
+  <!-- 底部浮动 --> 
+  <!-- 底部浮动 --> 
+  <div class="footFloat"> 
+   <input type="hidden" class="page_flag_name" value="loupan_detail" data-site_id="34" data-house_id="7031803"> 
+   <a rel="nofollow" href="javascript:" class="test-enter item" data-id="20015" data-site_id="34" data-house_id="7031803" data-need_idcard="0" data-title="预约看房" data-loupan="越秀滨海新城"> <p class="item-bnzf">预约看房</p> </a> 
+   <a href="javascript:" data-value="400-819-6579" class="item mobileTel"> <p class="item-dhzx">电话咨询</p> </a> 
+  </div> 
+  <!-- IM --> 
+  <script>
+    //参数必须要定义
+    var href = window.location.href;
+    var index = href.indexOf('?');
+    if (index != -1) {
+        href = href.substr(0 ,index);
+    }
+    var _chat = [{b:0,c:2,d:12,e:href,f:"34",g:"62",h:"7031803",i:"1",j:"219.144.212.23"},{data:{type:12,name:"越秀滨海新城",img:"http://static.loupan.com/upfile2/image/20170811/20170811144924_9278279.jpg",areaRoom:"南沙",price:"价格待定",fromUrl:href},desc:"客户给你发了一条楼盘信息",ext:""}];
+
+    //统一一键调用参数手机号b一定要传
+    //        (function(){var _im = document.createElement("div");_im.setAttribute('style','width:44px;height:44px;border-radius:50%;background:#16b955;color:#fffff;position:fixed;z-index:999999;bottom:80px;right:15px');_im.innerHTML="<img src='/////chat/img/chat-img.png' width='44' height='44' />";_im.addEventListener("click", function(){window.location.href='/////chat/mobile.html?_chat='+encodeURI(JSON.stringify(_chat));});document.body.appendChild(_im);})();
+    // 点击跳转
+    function im_chat (tel) {
+        _chat[0].b = tel;
+        window.location.href='//tools.loupan.com/chat/mobile.html?_chat='+encodeURI(JSON.stringify(_chat));
+    }
+</script> 
+  <!-- 右侧菜单 --> 
+  <section class="right-menu"> 
+   <div class="bg"></div> 
+   <div class="swiper-container"> 
+    <div class="swiper-wrapper"> 
+     <div class="swiper-slide"> 
+                <ul class="list">
+                    <li>
+                        <a href="/" class="item item-sy">首页</a>
+                    </li>
+                    <li>
+                        <a href="/index/build/index" class="item item-xf">新房</a>
+                    </li>
+
+                    <li>
+                        <a href="/index/build/index" class="item item-esf">商业地产</a>
+                    </li>
+                    <li>
+                        <a href="/index/article/index" class="item item-zf">楼讯</a>
+                    </li>
+                    <li>
+                        <a href="/index/enlist/index" class="item item-zf">帮你找房</a>
+                    </li>
+                </ul>
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <script>
+    var version = '201905281638';
+
+    /* 房价信息 */
+    var price_chart_data = {"house_name":"\u8d8a\u79c0\u6ee8\u6d77\u65b0\u57ce","cityarea_name":"\u5357\u6c99","city_name":"\u5e7f\u5dde","data":{"2018-12":{"x":18000,"c":28723,"a":22057},"2019-01":{"x":18000,"c":29033,"a":22211},"2019-02":{"x":17000,"c":27612,"a":20863},"2019-03":{"x":18000,"c":24299,"a":20500},"2019-04":{"x":18000,"c":25314,"a":21017},"2019-05":{"x":18000,"c":25725,"a":20767}}};
+
+    /* wx分享 */
+    var wxShareInfo = {
+        appId: 'wx3643417f3deb0bb8',
+        timestamp: '1561268488',
+        nonceStr: 'SXGTnUwO5UXNZVe1',
+        signature: 'fdd78ee5af99f5c90c3f6f14333ce0c05f47b9a4',
+
+        title: '广州越秀滨海新城_楼盘房价_户型详情_周边配套-广州楼盘网',
+        desc: '广州越秀滨海新城售楼电话(400-819-6579)，广州楼盘网新房频道为您提供越秀滨海新城房价走势、开盘日期、项目地址、团购优惠、户型图等动态。了解更多广州越秀滨海新城楼盘详情上广州楼盘网！',
+        link: window.location.href,
+        img: 'http://public.loupan.com/public/assets_v4_m//public/static/index/mobile/images/share-icon.png?v=20181023'
+    };
+</script> 
+  <script src="/public/static/index/mobile/js/require.js" data-main="http://public.loupan.com/public/assets_v4_m/js/house/house_detail.js?ver=201905281638"></script> 
+  <!-- baidu熊掌号 --> 
+  <script src="/public/static/index/mobile/js/c.js"></script> 
+
+ </body>
+</html>

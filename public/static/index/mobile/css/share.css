@@ -1,0 +1,35 @@
+#bg{ width: 100%; height: 100%; background: #000; opacity: 0.5; position: fixed; top:0; left:0; display: none;}
+/*---------------分享 s------------------*/
+.share_contain {-webkit-box-sizing: border-box; font-family:arial; height:222px;width:290px;background:#fff; border-radius:6px; position:fixed; left: 50%;top:50%;margin-top: -111px;margin-left: -145px;z-index:999;}
+.transEffect { opacity:0.0001;-webkit-transition:all 2s ease-in-out;}
+.share_contain .closeBtn { position: absolute;top: -24px;right: -39px; display: inline-block; width: 35px;height: 35px; border-radius: 17.5px;background-image: url(../other/kWecDyzr46hfEbsZAAAAAElFTkSuQmCC); background-repeat: no-repeat;background-position: center;background-size: 15px;background-color: #FFF;z-index: 1;}
+.share_contain .title { position:relative; margin:8px 22px 0px 22px;text-align: center;}
+.share_contain .title h1 { font-size:14px;font-weight:bold;line-height:32px;text-align:left;}
+.share_contain .jiathis_style_32x32 {width:auto; overflow:hidden; margin-left:10px;}
+.share_contain .jiathis_style_32x32 div { display:block; width:46px;height:70px;float:left; overflow:hidden;padding:14px 27px 0px 20px;}
+.share_contain .jiathis_style_32x32 .jtico {height:45px;height:45px !important;width:46px;width:46px !important; display:block;padding:0px;padding:0px !important; margin-bottom:6px; line-height:45px;line-height:45px !important;background:none;background-position:0px;}
+.share_contain .jiathis_style_32x32 .jtico_renren {width:45px !important;}
+.share_contain .jiathis_style_32x32 .copyBtn a.jtico {height:45px; height:45px !important;width:46px;width:46px !important;display:block;padding:0px;padding:0px !important;margin-bottom:6px;line-height:45px;line-height:45px !important;background:none;background-position:0px;}
+.share_contain .jiathis_style_32x32 .jtico,.share_contain .jiathis_style_32x32 .copyBtn,#share_to_other i {background-image:url("../images/act_d_share.gif"); background-size:296px;}
+.share_contain .jiathis_style_32x32 .copyBtn,.jiathis_style_32x32 .copyBtn:visited { height:45px;width:45px;display:block;background-position:0px 0px;margin-bottom:6px;}
+.share_contain .jiathis_style_32x32 .descr {width:80px;margin-left:-15px;height:12px;line-height:12px;font-size:12px;text-align:center;color:#666;}
+.share_contain .jiathis_style_32x32 .jiathis_button_qzone .jtico {background-position:-46px 0px;width:45px !important;}
+.share_contain .jiathis_style_32x32 .jiathis_button_tsina .jtico {background-position:-91px 0px;}
+.share_contain .jiathis_style_32x32 .jiathis_button_tqq .jtico {background-position:-137px 0px;}
+.share_contain .jiathis_style_32x32 .jiathis_button_renren .jtico {background-position:-183px 0px;}
+.share_contain .jiathis_style_32x32 .jiathis_button_QQ .jtico {background-position:-228px 0px;}
+.share_contain .jiathis_style_32x32 .copyBtn:hover,.share_contain .jiathis_style_32x32 .copyBtn:active {background-position:0px -46px;opacity:1.0;}
+.share_contain .jiathis_style_32x32 .descr,.jiathis_style_32x32 .descr:hover,.jiathis_style_32x32 .descr:active {background:none;}
+.share_contain .jiathis_style_32x32 .jiathis_button_qzone .jtico:hover,.share_contain .jiathis_style_32x32 .jiathis_button_qzone .jtico:active {background-position:-46px -46px;opacity:1.0;}
+.share_contain .jiathis_style_32x32 .jiathis_button_tsina .jtico:hover,.share_contain .jiathis_style_32x32 .jiathis_button_tsina .jtico:active {background-position:-92px -46px;opacity:1.0;}
+.share_contain .jiathis_style_32x32 .jiathis_button_tqq .jtico:hover,.share_contain .jiathis_style_32x32 .jiathis_button_tqq .jtico:active {background-position:-138px -46px;opacity:1.0;}
+.share_contain .jiathis_style_32x32 .jiathis_button_renren .jtico:hover,.share_contain .jiathis_style_32x32 .jiathis_button_renren .jtico:active {background-position:-184px -46px;opacity:1.0;}
+.share_contain .jiathis_style_32x32 .jiathis_button_QQ .jtico:hover,.share_contain .jiathis_style_32x32 .jiathis_button_QQ .jtico:active {background-position:-230px -46px;opacity:1.0;}
+#share_to_other i {float:left;height:16px; width:17px;background-position:-279px 0px;}
+.share_contain .jiathis_style_32x32 .nobg .jtico {width:48px !important;background:none;height:12px !important;line-height:12px !important;height:12px;line-height:12px;font-size:12px;text-align:center; margin-left:-1px;color:#666;}
+.share_contain .jiathis_style_32x32 .nobg .jtico:hover,.jiathis_style_32x32 .nobg .jtico:active {background:none;}
+.share_wrapper {font-size:14px;color:#000;}
+#show_url {-webkit-box-sizing: border-box; padding:16px; font-size:1rem; font-family:arial; height:112px;width:290px;background:#fff; border-radius:6px; position:absolute; left: 50%;top:50%;margin-top: -56px;margin-left: -145px;z-index:999;}
+#show_url .closeBtn { position: absolute;top: -16px;right: -16px; display: inline-block; width: 35px;height: 35px; border-radius: 17.5px;background-image: url(../other/kWecDyzr46hfEbsZAAAAAElFTkSuQmCC); background-repeat: no-repeat;background-position: center;background-size: 15px;background-color: #FFF;z-index: 1;}
+#show_url p{width: 100%; height:100%; padding-top: 10px; line-height:150%;word-wrap: break-word;word-break:break-all;}
+/*--------------分享 e-------------------*/

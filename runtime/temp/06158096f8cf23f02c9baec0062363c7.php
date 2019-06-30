@@ -1,0 +1,579 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"D:\phpStudy\PHPTutorial\WWW\lou/application/index\view\buildtype\detail.html";i:1561895247;s:71:"D:\phpStudy\PHPTutorial\WWW\lou\application\index\view\public\head.html";i:1561876054;}*/ ?>
+<!doctype html>
+<html lang="zh-cn">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta name="applicable-device" content="pc"> 
+  <meta name="renderer" content="webkit"> 
+  <meta name="mobile-agent" content="format=html5; url=http://m.loupan.com/gz/loupan/7031803/huxing/6_n1689197">
+  <meta name="mobile-agent" content="format=xhtml; url=http://m.loupan.com/gz/loupan/7031803/huxing/6_n1689197">
+  <link rel="alternate" media="only screen and(max-width: 640px)" href="/public/static/index/pc/css/6_n1689197"> 
+  <title>广州越秀滨海新城户型图-广州楼盘网</title> 
+  <meta name="Keywords" content="广州越秀滨海新城户型图"> 
+  <meta name="description" content="广州楼盘网为您提供越秀滨海新城户型图，让您轻松了解越秀滨海新城布局结构。"> 
+  <link rel="stylesheet" media="all" href="/public/static/index/pc/css/base_e556b7d6dfdb415990e231ea8ad035ac.css">
+  <link rel="stylesheet" media="all" href="/public/static/index/pc/css/xinfang.css"> 
+  <link rel="icon" href="/public/static/index/pc/css/favicon.ico" type="image/ico"> 
+  <link rel="shortcut icon" href="/public/static/index/pc/css/favicon.ico"> 
+  <meta name="format-detection" content="telephone=no"> 
+ </head> 
+ <body> 
+  <!--顶部广告--> 
+  <!-- header --> 
+  <div class="header"> 
+   <div class="box"> 
+    <div class="logo"> 
+     <a href="/" title="楼盘网"></a> 
+    </div> 
+    <div class="city city_v3 city_zhaoshan"> 
+    </div> 
+        <div class="menu">
+     <div class="item cur ">
+      <a href="/">首页</a>
+     </div>
+
+      <div class="item ">
+      <a href="/index/build/index">新房</a>
+     </div>
+     <div class="item ">
+      <a href="/index/build/index">商业地产</a>
+     </div>
+     <div class="item ">
+      <a href="/index/article/index">楼讯</a>
+     </div>
+
+    <div class="userState login2"></div>
+   </div>
+    <div class="userState login2"> 
+    </div> 
+   </div> 
+  </div>
+  <div class="pages"> 
+   <div class="pages pages-house pages-img pages-hxxq"> 
+    <input type="hidden" id="house_id" value="7031803"> 
+    <div class="inner-search"> 
+     <div class="box"> 
+      <div class="s"> 
+       <form action="/index.php/so/" id="search_form_id" method="post" autocomplete="off" target="_blank"> 
+        <input type="hidden" name="search_type" id="search_type" value="house"> 
+        <div class="b"> 
+         <input type="text" placeholder="请输入楼盘名/关键词" id="search_input_loupan" name="q"> 
+         <button type="submit" id="search_house_id"></button> 
+        </div> 
+       </form> 
+       <ul id="search_ul_loupan" style="display: none;"></ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="title box">
+     <div class="t">
+      <h1><?php echo $build->name; ?></h1>
+     </div>
+     <div class="other">
+      <div class="tag">
+       <span><?php echo $build->item; ?></span>
+<!--        <span>洋房</span>
+       <span>普通住宅</span>
+       <span>活动优惠</span>
+       <span>性价比佳</span> -->
+      </div>
+<!--       <div class="sao">
+       <div class="ewm">
+        <p>联系方式</p>
+        <div class="codeTel" data-tel="4008196579"></div>
+       </div>
+      </div>
+      <div class="tel">
+        <?php echo $build->telephone; ?> 
+      </div> -->
+     </div>
+    </div>
+    <div class="navigate box" id="navigate">
+     <a href="/index/build/show?id=<?php echo $build->id; ?>" class="active">楼盘主页</a>
+     <a href="/index/build/more?id=<?php echo $build->id; ?>">详细信息</a>
+     <a href="/index/buildarticle/index?id=<?php echo $build->id; ?>">楼盘动态</a>
+     <a href="/index/buildtype/index?id=<?php echo $build->id; ?>">户型图</a>
+     <a href="/index/build/image?id=<?php echo $build->id; ?>">楼盘相册</a>
+    </div>
+    <!-- 滚动时显示的浮动导航 --> 
+
+    <div class="container box"> 
+     <div class="hx-tab box"> 
+      <!-- <div class="qh"> 
+       <ul> 
+        <li data-room="4室2厅2卫" data-sale-type="暂无数据" data-name="暂无数据" data-price="19000" data-area="107-109" data-u-area="暂无数据" data-desc="暂无解读数据" data-index="0"> 4室2厅2卫<br>建面 约107-109㎡ </li> 
+        <li data-room="3室2厅1卫" data-sale-type="暂无数据" data-name="暂无数据" data-price="19000" data-area="86" data-u-area="86" data-desc="暂无解读数据" data-index="1"> 3室2厅1卫<br>建面 约86㎡ </li> 
+        <li data-room="3室2厅" data-sale-type="暂无数据" data-name="整个空间方正，拐角少，后期利用难度低，提升整个空间的利用率。全明户型，每一个空间都带有窗户，保证后期居住时能够充分采光和透气；通透户型，保证空气能够流通起来，空气质量较好；采光较好，保证居住舒适度。整个户型空间布局合理，真正做到了干湿分离、动静分离，方便后期生活。卧室作为较为重要的休息空间，尺寸合适，有利于主人更好的休息；客厅作为重要的会客空间，尺寸合适，能够保证主人会客需求。卫生间和厨房作为重要" data-price="19000" data-area="94" data-u-area="暂无数据" data-desc="南北通透,户型方正,主卧带卫" data-index="2"> 3室2厅<br>建面 约94㎡ </li> 
+        <li data-room="3室2厅" data-sale-type="暂无数据" data-name="整个空间方正，拐角少，后期利用难度低，提升整个空间的利用率。全明通透的户型，居住舒适度较高。整个空间有充足的采光，这一点对于后期居住，尤其重要。卧室位置合理，能够保证足够安静，客厅的声音不会影响卧室的休息；卫生间位置合理，使用起来动线比较合理；厨房位于门口，方便使用和油烟的排出。各个功能区间面积大小都比较合理，后期使用起来比较方便，居住舒适度高。公摊相对合理，一般房子公摊基本都在此范畴。日常使用基" data-price="19000" data-area="93" data-u-area="暂无数据" data-desc="全明格局,户型方正,主卧带卫" data-index="3"> 3室2厅<br>建面 约93㎡ </li> 
+        <li data-room="4室2厅" data-sale-type="暂无数据" data-name="各个空间都很方正，方便后期家具的摆放。全明户型，每一个空间都带有窗户，保证后期居住时能够充分采光和透气；通透户型，保证空气能够流通起来，空气质量较好；采光较好，保证居住舒适度。整个户型空间布局合理，真正做到了干湿分离、动静分离，方便后期生活。客厅、卧室、卫生间和厨房等主要功能间尺寸以及比例合适，方便采光、通风，后期居住方便。" data-price="19000" data-area="105" data-u-area="暂无数据" data-desc="全明格局,动静分离,主卧带卫" data-index="4"> 4室2厅<br>建面 约105㎡ </li> 
+        <li data-room="3室2厅" data-sale-type="暂无数据" data-name="各个空间方正，后期空间利用率高。全明户型，每一个空间都带有窗户，保证后期居住时能够充分采光和透气；通透户型，保证空气能够流通起来，空气质量较好；采光较好，保证居住舒适度。卧室位置合理，能够保证足够安静，客厅的声音不会影响卧室的休息；卫生间位置合理，使用起来动线比较合理；厨房位于门口，方便使用和油烟的排出。客厅、卧室、卫生间和厨房等主要功能间尺寸以及比例合适，方便采光、通风，后期居住方便。" data-price="19000" data-area="94" data-u-area="暂无数据" data-desc="全明格局,主卧带卫,入户花园" data-index="5"> 3室2厅<br>建面 约94㎡ </li> 
+        <li data-room="2室2厅" data-sale-type="暂无数据" data-name="各个空间方正，后期空间利用率高。非南向或东向，采光不足，西面下午为西晒，夏天时西晒阳光比较热，室内温度变高。北向的下午采光不足，室内需要开灯补光。卧室位置合理，能够保证足够安静，客厅的声音不会影响卧室的休息；卫生间位置合理，使用起来动线比较合理；厨房位于门口，方便使用和油烟的排出。卧室作为较为重要的休息空间，尺寸合适，有利于主人更好的休息；客厅作为重要的会客空间，尺寸合适，能够保证主人会客需求。卫" data-price="19000" data-area="63" data-u-area="暂无数据" data-desc="户型方正,动静分离" data-index="6"> 2室2厅<br>建面 约63㎡ </li> 
+        <li data-room="2室2厅" data-sale-type="暂无数据" data-name="各个空间方正，后期空间利用率高。会造常年性的采光过剩，东朝阳冬天还好，夏天亮天很早，对家具的磨损也是非常大的，另外人居住在内非常焦灼炎热。而主卧非南朝向其他次卧或者小卧室朝南就会有种喧宾夺主的感觉。客厅朝北常年不见阳光舒适度不佳。厨卫等重要的使用较为频繁的空间布局合理，方便使用，并且能够保证整个空间的空气质量。各个功能区间面积大小都比较合理，后期使用起来比较方便，居住舒适度高。" data-price="19000" data-area="72" data-u-area="暂无数据" data-desc="全明格局,户型方正" data-index="7"> 2室2厅<br>建面 约72㎡ </li> 
+        <li data-room="3室2厅" data-sale-type="暂无数据" data-name="各个空间方正，后期空间利用率高。整个空间采光很好，主卧和客厅均能够保证很好的采光；并且能真正做到全明通透，整个空间空气好。整个户型空间布局合理，真正做到了干湿分离、动静分离，方便后期生活。客厅、卧室、卫生间和厨房等主要功能间尺寸以及比例合适，方便采光、通风，后期居住方便。公摊相对合理，一般房子公摊基本都在此范畴。日常使用基本满足。" data-price="19000" data-area="93" data-u-area="暂无数据" data-desc="户型方正,动静分离,主卧带卫" data-index="8"> 3室2厅<br>建面 约93㎡ </li> 
+        <li data-room="3室2厅" data-sale-type="暂无数据" data-name="各个空间都很方正，方便后期家具的摆放。全明户型，每一个空间都带有窗户，保证后期居住时能够充分采光和透气；通透户型，保证空气能够流通起来，空气质量较好；采光较好，保证居住舒适度。整个户型空间布局合理，真正做到了干湿分离、动静分离，方便后期生活。客厅、卧室、卫生间和厨房等主要功能间尺寸以及比例合适，方便采光、通风，后期居住方便。" data-price="19000" data-area="96" data-u-area="暂无数据" data-desc="全明格局,动静分离,主卧带卫" data-index="9"> 3室2厅<br>建面 约96㎡ </li> 
+        <li data-room="暂无数据" data-sale-type="2" data-name="14栋楼层平面图" data-price="19000" data-area="暂无数据" data-u-area="暂无数据" data-desc="暂无解读数据" class="active" data-index="10"> <br>建面 约㎡ </li> 
+        <li data-room="楼层平面图" data-sale-type="2" data-name="21栋楼层平面图" data-price="19000" data-area="暂无数据" data-u-area="暂无数据" data-desc="暂无解读数据" data-index="11"> 楼层平面图<br>建面 约㎡ </li> 
+        <li data-room="4室2厅2卫" data-sale-type="2" data-name="暂无数据" data-price="19000" data-area="103" data-u-area="暂无数据" data-desc="暂无解读数据" data-index="12"> 4室2厅2卫<br>建面 约103㎡ </li> 
+        <li data-room="3室2厅2卫" data-sale-type="2" data-name="暂无数据" data-price="19000" data-area="93" data-u-area="暂无数据" data-desc="暂无解读数据" data-index="13"> 3室2厅2卫<br>建面 约93㎡ </li> 
+        <li data-room="3室2厅2卫" data-sale-type="2" data-name="暂无数据" data-price="19000" data-area="94" data-u-area="94" data-desc="暂无解读数据" data-index="14"> 3室2厅2卫<br>建面 约94㎡ </li> 
+        <li data-room="4室2厅2卫" data-sale-type="2" data-name="暂无数据" data-price="19000" data-area="107" data-u-area="107" data-desc="暂无解读数据" data-index="15"> 4室2厅2卫<br>建面 约107㎡ </li> 
+        <li data-room="4室2厅3卫" data-sale-type="2" data-name="暂无数据" data-price="19000" data-area="115" data-u-area="115" data-desc="暂无解读数据" data-index="16"> 4室2厅3卫<br>建面 约115㎡ </li> 
+       </ul> 
+      </div>  -->
+<!--       <div class="fx"> 
+       <div class="prev"></div> 
+       <div class="next"></div> 
+      </div>  -->
+     </div> 
+     <div class="imgText box"> 
+      <ul class="photoTab"> 
+       <li> 
+        <div class="swiper photos"> 
+         <div class="tools"> 
+          <div class="desc"> 
+           <p>暂无数据</p> 
+          </div> 
+<!--           <a href="javascript:;" class="full">全屏展示</a>  -->
+         </div> 
+         <div id="slider" class="flexslider big"> 
+          <ul class="slides"> 
+           <!--焦点图显示--> 
+           <li class="active"> <img src="<?php echo $house->img; ?>" alt=""> </li> 
+          </ul> 
+          <div class="flex-direction-nav"> 
+           <a href="javascript:;" class="flex-prev" title="上一张"></a> 
+           <a href="javascript:;" class="flex-next" title="下一张"></a> 
+          </div> 
+         </div> 
+         <div id="carousel" class="flexslider small"> 
+          <div class="slideFixed"> 
+           <ul class="slides"> 
+            <!--焦点图显示--> 
+            <li class="active"> <img src="/public/static/index/pc/images/1808398141594.jpg" alt=""> </li> 
+           </ul> 
+          </div> 
+          <div class="flex-direction-nav"> 
+           <a href="javascript:;" class="flex-prev"></a> 
+           <a href="javascript:;" class="flex-next"></a> 
+          </div> 
+         </div> 
+        </div> 
+      </li> 
+       
+       <li class="active"> 
+        <div class="swiper photos"> 
+         <div class="tools"> 
+          <div class="desc"> 
+           <p><?php echo $house->house; ?></p> 
+          </div> 
+          <!-- <a href="javascript:;" class="full">全屏展示</a> --> 
+         </div> 
+         <div id="slider" class="flexslider big"> 
+          <ul class="slides"> 
+           <!--焦点图显示--> 
+           <li class="active"> <img src="<?php echo $house->img; ?>" alt=""> </li> 
+          </ul> 
+         </div> 
+
+        </div> </li> 
+
+       <li> 
+        <div class="swiper photos"> 
+         <div class="tools"> 
+          <div class="desc"> 
+           <p>暂无数据</p> 
+          </div> 
+          <a href="javascript:;" class="full">全屏展示</a> 
+         </div> 
+         <div id="slider" class="flexslider big"> 
+          <ul class="slides"> 
+           <!--焦点图显示--> 
+           <li class="active"> <img src="/public/static/index/pc/images/1806434527471_6d92957e99324c70af9f4fec407e2d56.jpg" alt=""> </li> 
+          </ul> 
+          <div class="flex-direction-nav"> 
+           <a href="javascript:;" class="flex-prev" title="上一张"></a> 
+           <a href="javascript:;" class="flex-next" title="下一张"></a> 
+          </div> 
+         </div> 
+         <div id="carousel" class="flexslider small"> 
+          <div class="slideFixed"> 
+           <ul class="slides"> 
+            <!--焦点图显示--> 
+            <li class="active"> <img src="/public/static/index/pc/images/1806434527471_6d92957e99324c70af9f4fec407e2d56.jpg" alt=""> </li> 
+           </ul> 
+          </div> 
+          <div class="flex-direction-nav"> 
+           <a href="javascript:;" class="flex-prev"></a> 
+           <a href="javascript:;" class="flex-next"></a> 
+          </div> 
+         </div> 
+        </div> </li> 
+
+      </ul> 
+      <div class="imgDetail"> 
+       <!-- 户型信息 --> 
+       <div class="hx-info"> 
+<!--         <div class="tit"> 
+         <p></p> 
+         <span class="tag-1">在售</span> 
+        </div> --> 
+        <div class="line">
+         户型名称：
+         <span><?php echo $house->house; ?></span>
+        </div> 
+        <div class="line">
+          参考起价： 
+         <span><?php echo $build->start_price; ?></span>
+        </div> 
+        <div class="line">
+         建筑面积：
+         <span>暂无数据</span>
+        </div> 
+        <div class="line">
+         套内面积：
+         <span>暂无数据</span>
+        </div> 
+
+       </div> 
+       <!-- 户型解读 --> 
+       <div class="hx-txt"> 
+        <h5>户型解读</h5> 
+        <p>暂无数据</p> 
+       </div> 
+       <!-- 帮您找房 --> 
+
+      </div> 
+      <div class="xian"></div> 
+     </div> 
+     <!-- 楼盘相册 --> 
+<!--      <div class="tuijian box"> 
+      <div class="tit">
+       楼盘相册
+      </div> 
+      <ul> 
+       <li> <a href="http://gz.loupan.com/photo/7031803/tu4-2319575.html" class="img" target="_blank"> <img src="/public/static/index/pc/images/1635495389300.jpg" alt=""> </a> 
+        <div class="text"> 
+         <div class="name"></div> 
+        </div> </li> 
+       <li> <a href="http://gz.loupan.com/photo/7031803/tu3-567487.html" class="img" target="_blank"> <img src="/public/static/index/pc/images/1633334944963.jpg" alt=""> </a> 
+        <div class="text"> 
+         <div class="name"></div> 
+        </div> </li> 
+       <li> <a href="http://gz.loupan.com/photo/7031803/tu3-567486.html" class="img" target="_blank"> <img src="/public/static/index/pc/images/1627528333206.jpg" alt=""> </a> 
+        <div class="text"> 
+         <div class="name"></div> 
+        </div> </li> 
+       <li> <a href="http://gz.loupan.com/photo/7031803/tu5-376147.html" class="img" target="_blank"> <img src="/public/static/index/pc/images/1407021296389.jpg" alt="滨海新城93㎡样板间"> </a> 
+        <div class="text"> 
+         <div class="name">
+          滨海新城93㎡样板间
+         </div> 
+        </div> </li> 
+       <li> <a href="http://gz.loupan.com/photo/7031803/tu5-376146.html" class="img" target="_blank"> <img src="/public/static/index/pc/images/1407024882373.jpg" alt="滨海新城93㎡样板间"> </a> 
+        <div class="text"> 
+         <div class="name">
+          滨海新城93㎡样板间
+         </div> 
+        </div> </li> 
+      </ul> 
+     </div>  -->
+     <!-- 为您推荐 --> 
+     <div class="tuijian"> 
+      <div class="tit">
+       热门楼盘
+      </div> 
+      <ul> 
+       <?php foreach($hot_builds as $hot): ?>
+       <li> <a href="" target="_blank" class="img"> <img src="<?php echo $hot->img; ?>" alt="<?php echo $hot->name; ?>"> </a> 
+        <div class="text"> 
+         <div class="name">
+          <?php echo $hot->name; ?>
+         </div> 
+         <div class="price">
+          均价：
+          <span><?php echo $hot->start_price; ?></span>
+         </div> 
+        </div> 
+      </li> 
+      <?php endforeach; ?>
+      </ul> 
+     </div> 
+    </div> 
+    <!-- 免责声明 --> 
+<!--     <div class="mianze box">
+     <span>免责声明：</span>楼盘信息由开发商提供，最终以政府部门登记备案为准，请谨慎核查，如该楼盘信息有误，您可以投诉：4008180066转 666666
+    </div>  -->
+   </div> 
+   <script type="text/javascript" src="/public/static/index/pc/js/jquery-1.7.2.min.js"></script> 
+   <script type="text/javascript" src="/34"></script> 
+   <script src="/public/static/index/pc/js/require_154780179d1643248fab44358aec98e2.js" data-main="http://public.loupan.com/public/assets_v4//public/static/index/pc/js/house/house_hxxq.js?ver=201906111346"></script> 
+   <!-- footer --> 
+   <div class="footer footer-in"> 
+    <div class="content"> 
+     <div class="switch"> 
+      <div class="tab footerTab"> 
+       <ul class="tab-head"> 
+        <li class="active">热门城市</li> 
+        <li>推荐楼盘</li> 
+        <li>广州房价</li> 
+        <li>友情链接</li> 
+        <li>买房工具</li> 
+       </ul> 
+       <ul class="tab-body"> 
+        <li class="active"> 
+         <ul class="list"> 
+          <li><a href="http://sh.loupan.com" title="上海房产网" target="_blank">上海房产网</a> </li> 
+          <li><a href="http://sz.loupan.com" title="深圳房产网" target="_blank">深圳房产网</a> </li> 
+          <li><a href="http://wh.loupan.com" title="武汉房产网" target="_blank">武汉房产网</a> </li> 
+          <li><a href="http://hz.loupan.com" title="杭州房产网" target="_blank">杭州房产网</a> </li> 
+          <li><a href="http://hn.loupan.com" title="海南房产网" target="_blank">海南房产网</a> </li> 
+          <li><a href="http://sanya.loupan.com" title="三亚房产网" target="_blank">三亚房产网</a> </li> 
+          <li><a href="http://dl.loupan.com" title="大连房产网" target="_blank">大连房产网</a> </li> 
+          <li><a href="http://xa.loupan.com" title="西安房产网" target="_blank">西安房产网</a> </li> 
+          <li><a href="http://zz.loupan.com" title="郑州房产网" target="_blank">郑州房产网</a> </li> 
+          <li><a href="http://nc.loupan.com" title="南昌房产网" target="_blank">南昌房产网</a> </li> 
+          <li><a href="http://qz.loupan.com" title="泉州房产网" target="_blank">泉州房产网</a> </li> 
+          <li><a href="http://anxi.loupan.com" title="安溪房产网" target="_blank">安溪房产网</a> </li> 
+          <li><a href="http://dehua.loupan.com" title="德化房产网" target="_blank">德化房产网</a> </li> 
+          <li><a href="http://huian.loupan.com" title="惠安房产网" target="_blank">惠安房产网</a> </li> 
+          <li><a href="http://yongchun.loupan.com" title="永春房产网" target="_blank">永春房产网</a> </li> 
+          <li><a href="http://nanan.loupan.com" title="南安房产网" target="_blank">南安房产网</a> </li> 
+          <li><a href="http://sy.loupan.com" title="沈阳房产网" target="_blank">沈阳房产网</a> </li> 
+          <li><a href="http://nj.loupan.com" title="南京房产网" target="_blank">南京房产网</a> </li> 
+          <li><a href="http://xt.loupan.com" title="湘潭房产网" target="_blank">湘潭房产网</a> </li> 
+          <li><a href="http://cd.loupan.com" title="成都房产网" target="_blank">成都房产网</a> </li> 
+         </ul> </li> 
+        <li> 
+         <ul class="list"> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#A" target="_blank">A</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#B" target="_blank">B</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#C" target="_blank">C</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#D" target="_blank">D</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#E" target="_blank">E</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#F" target="_blank">F</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#G" target="_blank">G</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#H" target="_blank">H</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#I" target="_blank">I</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#J" target="_blank">J</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#K" target="_blank">K</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#L" target="_blank">L</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#M" target="_blank">M</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#N" target="_blank">N</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#O" target="_blank">O</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#P" target="_blank">P</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#Q" target="_blank">Q</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#R" target="_blank">R</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#S" target="_blank">S</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#T" target="_blank">T</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#U" target="_blank">U</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#V" target="_blank">V</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#W" target="_blank">W</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#X" target="_blank">X</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#Y" target="_blank">Y</a> </li> 
+          <li> <a href="http://gz.loupan.com/xinfangsuoyin.html#Z" target="_blank">Z</a> </li> 
+         </ul> 
+         <ul class="list"> 
+          <li> <a href="http://gz.loupan.com/loupan/7031804.html" title="幸福园" target="_blank" hidefocus="true"> 幸福园 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031805.html" title="新城领寓商用" target="_blank" hidefocus="true"> 新城领寓商用 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031806.html" title="盛禾水悦城" target="_blank" hidefocus="true"> 盛禾水悦城 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031807.html" title="新世界·云逸" target="_blank" hidefocus="true"> 新世界·云逸 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031808.html" title="恒大悦府" target="_blank" hidefocus="true"> 恒大悦府 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031809.html" title="时代E-PARK(天河)" target="_blank" hidefocus="true"> 时代E-PARK(天河) </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031810.html" title="信达&amp;金茂|天河金茂广场" target="_blank" hidefocus="true"> 信达&amp;金茂|天河金茂广场 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031811.html" title="华发中央公园" target="_blank" hidefocus="true"> 华发中央公园 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031812.html" title="雅居乐汇通国际商用" target="_blank" hidefocus="true"> 雅居乐汇通国际商用 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031813.html" title="水悦澜山" target="_blank" hidefocus="true"> 水悦澜山 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031814.html" title="尚东柏悦府" target="_blank" hidefocus="true"> 尚东柏悦府 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031815.html" title="GIC研修中心" target="_blank" hidefocus="true"> GIC研修中心 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031816.html" title="海航·华南家园项目" target="_blank" hidefocus="true"> 海航·华南家园项目 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031817.html" title="星信国际商用" target="_blank" hidefocus="true"> 星信国际商用 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031818.html" title="荔湾新城·欣悦湾" target="_blank" hidefocus="true"> 荔湾新城·欣悦湾 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031819.html" title="保利·葉公馆" target="_blank" hidefocus="true"> 保利·葉公馆 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031820.html" title="粤泰荣廷府" target="_blank" hidefocus="true"> 粤泰荣廷府 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031821.html" title="粤泰天鹅湾·擎天" target="_blank" hidefocus="true"> 粤泰天鹅湾·擎天 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031822.html" title="临港国际商务大厦" target="_blank" hidefocus="true"> 临港国际商务大厦 </a> </li> 
+          <li> <a href="http://gz.loupan.com/loupan/7031823.html" title="花城美汇商用" target="_blank" hidefocus="true"> 花城美汇商用 </a> </li> 
+         </ul> </li> 
+        <li> 
+         <ul class="list"> 
+          <li> <a href="http://gz.loupan.com/fangjia/nansha/" title="南沙房价" target="_blank">南沙房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/fanyu/" title="番禺房价" target="_blank">番禺房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/zengcheng/" title="增城房价" target="_blank">增城房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/huangpu/" title="黄埔房价" target="_blank">黄埔房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/tianhe/" title="天河房价" target="_blank">天河房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/liwan/" title="荔湾房价" target="_blank">荔湾房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/conghua/" title="从化房价" target="_blank">从化房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/yuexiu/" title="越秀房价" target="_blank">越秀房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/haizhu/" title="海珠房价" target="_blank">海珠房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/baiyun/" title="白云房价" target="_blank">白云房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/huadu/" title="花都房价" target="_blank">花都房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/qingyuan/" title="清远房价" target="_blank">清远房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/foshan/" title="佛山房价" target="_blank">佛山房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/haiwaiquyu/" title="海外区域房价" target="_blank">海外区域房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/qita/" title="其他房价" target="_blank">其他房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/wanqingsha/" title="万顷沙房价" target="_blank">万顷沙房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/mingzhuwan/" title="明珠湾房价" target="_blank">明珠湾房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/nanshawan/" title="南沙湾房价" target="_blank">南沙湾房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/jinzhou/" title="金洲房价" target="_blank">金洲房价</a> </li> 
+          <li> <a href="http://gz.loupan.com/fangjia/jiaomenhe/" title="蕉门河房价" target="_blank">蕉门河房价</a> </li> 
+         </ul> </li> 
+        <li> 
+         <ul class="list"> 
+          <li><a href="http://news.fy.xafc.com/" title="阜阳买房" target="_blank" hidefocus="true">阜阳买房</a></li> 
+          <li><a href="http://guangzhou.qfang.com/sale " title="广州二手房" target="_blank" hidefocus="true">广州二手房</a></li> 
+          <li><a href="http://guangzhou.qfang.com/sale" title="广州二手房" target="_blank" hidefocus="true">广州二手房</a></li> 
+          <li><a href="http://www.jc001.cn/tag-33184/" title="防蚊纱窗" target="_blank" hidefocus="true">防蚊纱窗</a></li> 
+          <li><a href="http://www.homekoo.com/tatami_style-6" title="榻榻米床" target="_blank" hidefocus="true">榻榻米床</a></li> 
+          <li><a href="http://wh.sell.house365.com/" title="芜湖二手房" target="_blank" hidefocus="true">芜湖二手房</a></li> 
+          <li><a href="http://www.jiaju100.com/article/" title="家居资讯" target="_blank" hidefocus="true">家居资讯</a></li> 
+          <li><a href="http://tuzhizhijia.com/yicengbieshu/" title="一层别墅图片 " target="_blank" hidefocus="true">一层别墅图片 </a></li> 
+          <li><a href="http://gz.jiwu.com/loupan/" title="广州楼盘" target="_blank" hidefocus="true">广州楼盘</a></li> 
+          <li><a href="http://www.shejiben.com/zsj/guangzhou/" title="广州装修设计" target="_blank" hidefocus="true">广州装修设计</a></li> 
+          <li><a href="http://zhuhai.liebiao.com/ershoufang/" title="珠海二手房" target="_blank" hidefocus="true">珠海二手房</a></li> 
+          <li><a href="http://www.meilele.com/category-chuangpintaojian/" title="床品套件" target="_blank" hidefocus="true">床品套件</a></li> 
+          <li><a href="http://www.9juren.com/invest/" title="家具加盟 " target="_blank" hidefocus="true">家具加盟 </a></li> 
+          <li><a href="http://chengde.focus.cn/group/yezhu.php" title="承德业主论坛" target="_blank" hidefocus="true">承德业主论坛</a></li> 
+          <li><a href="http://dandong.58.com/ershoufang/" title="丹东二手房网" target="_blank" hidefocus="true">丹东二手房网</a></li> 
+          <li><a href="http://gy.focus.cn/group/yezhu.php " title="贵阳业主论坛" target="_blank" hidefocus="true">贵阳业主论坛</a></li> 
+          <li><a href="http://news.focus.cn/binzhou/" title="滨州房产新闻" target="_blank" hidefocus="true">滨州房产新闻</a></li> 
+          <li><a href="http://www.zhaoshangbao.com/difang/sd" title="山东建材" target="_blank" hidefocus="true">山东建材</a></li> 
+          <li><a href="http://gy.anjuke.com/sale/" title="贵阳二手房" target="_blank" hidefocus="true">贵阳二手房</a></li> 
+          <li><a href="http://www.gong123.com/kong/" title="暖通空调资料" target="_blank" hidefocus="true">暖通空调资料</a></li> 
+          <li><a href="http://www.tujia.com/duanzu_guangzhou/" title="广州日租房" target="_blank" hidefocus="true">广州日租房</a></li> 
+          <li><a href="http://guangzhou.tianqi.com/10/" title="广州天气预报10天" target="_blank" hidefocus="true">广州天气预报10天</a></li> 
+          <li><a href="http://pt.letfind.com/zu/" title="莆田租房" target="_blank" hidefocus="true">莆田租房</a></li> 
+          <li><a href="http://www.zx123.cn/ask/" title="装修问答" target="_blank" hidefocus="true">装修问答</a></li> 
+         </ul> </li> 
+        <li> 
+         <ul class="list"> 
+          <li><a href="http://www.loupan.com/fangdai/" title="房贷计算器" target="_blank">房贷计算器</a></li> 
+          <li><a href="http://www.loupan.com/fangdai_gfnlpg/" title="购房能力计算器" target="_blank">购房能力计算器</a></li> 
+          <li><a href="http://www.loupan.com/fangdai_gjjdk/" title="公积金贷款计算器" target="_blank">公积金贷款计算器</a></li> 
+          <li><a href="http://www.loupan.com/fangdai_tqhk/" title="提前还贷计算器" target="_blank">提前还贷计算器</a></li> 
+          <li><a href="http://www.loupan.com/fangdai_sf/" title="税费计算器" target="_blank">税费计算器</a></li> 
+          <li><a href="http://gz.loupan.com/gongjijin/" title="公积金查询" target="_blank">公积金查询</a></li> 
+          <li><a href="http://gz.loupan.com/shebao/" title="社保查询" target="_blank">社保查询</a></li> 
+         </ul> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="linkTo"> 
+     <a target="_blank" href="http://www.loupan.com/about/index" rel="nofollow">公司简介</a> | 
+     <a target="_blank" href="http://www.loupan.com/about/culture" rel="nofollow">企业文化</a> | 
+     <a target="_blank" href="http://www.loupan.com/about/partners" rel="nofollow">合作伙伴</a> | 
+     <a target="_blank" href="http://www.loupan.com/about/contact" rel="nofollow">联系我们</a> | 
+     <a target="_blank" href="http://www.loupan.com/about/hezuo" rel="nofollow">市场合作</a> | 
+     <a href="javascript:;" class="showFlBox" rel="nofollow">友情链接申请</a> | 
+     <a target="_blank" href="http://hezuo.loupan.com/" rel="nofollow">分站合作</a> | 
+     <a target="_blank" href="http://gz.loupan.com/sitemap.html" class="site_map">网站地图</a> 
+    </div> 
+    <div class="info"> 
+     <p>全国统一服务热线 4008180066转111666 | 邮箱：cs@LouPan.com 经营性ICP证：湘ICP备12003586号-55</p> 
+     <p>Copyright © 2018 www.LouPan.com All Rights Reserved 广州楼盘网网络科技有限公司</p> 
+     <p>湘公网安备 43019002000309号(湖南创业工场网络科技有限公司)</p> 
+    </div> 
+   </div> 
+   <!-- 友情链接申请 --> 
+   <div id="ljsqBox"></div> 
+   <!-- 意见反馈 --> 
+   <div class="feedback"> 
+    <div class="bg"></div> 
+    <div class="panel"> 
+     <div class="close"></div> 
+     <h5>楼盘网产品使用意见反馈</h5> 
+     <form action="/about/sug" method="post" id="feedbackform"> 
+      <div class="time">
+       创建时间：
+       <span>2019-06-23</span>
+      </div> 
+      <div class="desc">
+       感谢您对楼盘网的支持与关注，请将您遇到的问题或者建议反馈给我们,我们虚心接受您最诚挚的意见和建议。
+      </div> 
+      <div class="select feedbackselect"> 
+       <a href="javascript:;" class="cur">Bug</a> 
+       <a href="javascript:;">内容纠错</a> 
+       <a href="javascript:;">吐槽</a> 
+       <a href="javascript:;">投诉</a> 
+       <a href="javascript:;">其他</a> 
+      </div> 
+      <input name="sug[title]" type="hidden" id="feedbacktitle" value="Bug"> 
+      <input name="backurl" type="hidden" value="/layout/7031803/tu-1689197.html"> 
+      <div class="textarea"> 
+       <h3>反馈内容<font color="red">*</font></h3> 
+       <textarea name="sug[bodys]" id="" cols="30" rows="10" placeholder="请输入反馈内容(最少5个字)..."></textarea> 
+      </div> 
+      <div class="tel"> 
+       <h3>联系方式</h3> 
+       <input placeholder="请输入您的电话号码" name="sug[mobile]" type="text"> 
+      </div> 
+      <div class="btn"> 
+       <button>提交</button> 
+      </div> 
+     </form> 
+    </div> 
+   </div> 
+  </div> 
+  <script type="text/javascript" src="/34"></script> 
+  <script src="/public/static/index/pc/js/require_154780179d1643248fab44358aec98e2.js" data-main="http://public.loupan.com/public/assets_v4//public/static/index/pc/js/house/house_detail.js?ver=201906111346"></script> 
+  <script type="text/javascript">
+    var _href = window.location.href;
+    if (_href.indexOf('?') != -1) {
+        _href = _href.substr(0 ,_href.indexOf('?'));
+    }
+    var _chat = [{c:1,d:12,e:_href,f:"34",g:"62",h:"7031803",i:"1",j:""},{data:{type:12,name:"越秀滨海新城",img:"http://static.loupan.com/upfile2/image/20180813/20180813140930_5476201.jpg",areaRoom:"南沙",price:"参考起价：19000元/㎡",fromUrl:_href},desc:"客户给你发了一条楼盘信息",ext:""}];
+    (function () { var _im = document.createElement('script'); _im.type = 'text/javascript'; _im.async = true; _im.src = 'http://tools.loupan.com/chat/chat.js?v=201906111346'; var _imm = document.getElementsByTagName('script')[0]; _imm.parentNode.insertBefore(_im, _imm); })();
+</script> 
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_30080576'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30080576' type='text/javascript'%3E%3C/script%3E"));</script> 
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d5bdb436a2ddb0894482c467a0851b5f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> 
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0dfeaebbbf5c68f04a3916b9439b4c7f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> 
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_30035949'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30035949' type='text/javascript'%3E%3C/script%3E"));</script>
+  <script>var _hmt = _hmt || [];(function() { var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?c07a5cf91cdac070faa1e701f45995a8";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();</script>
+  <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script> 
+  <!-- 360推送 --> 
+  <script>
+    (function(){
+        var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?7155404388a314098c74f6990530e5cc":"https://jspassport.ssl.qhimg.com/11.0.1.js?7155404388a314098c74f6990530e5cc";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script> 
+  <!-- GrowingIO Analytics code version 2.1 --> 
+  <!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com --> 
+  <script type="text/javascript">
+!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+  gio('init','b48577f93a577294', {});
+gio('send');
+</script> 
+  <!-- End GrowingIO Analytics code version: 2.1 -->  
+ </body>
+</html>

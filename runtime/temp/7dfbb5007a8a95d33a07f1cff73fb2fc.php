@@ -1,0 +1,114 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"D:\phpStudy\PHPTutorial\WWW\lou/application/index\view\article\detail.html";i:1561884007;s:71:"D:\phpStudy\PHPTutorial\WWW\lou\application\index\view\public\head.html";i:1561876054;}*/ ?>
+<!doctype html>
+<html lang="zh-cmn-Hans">
+ <head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <link rel="icon" href="/public/static/index/pc/css/favicon.ico" type="image/ico">
+  <link rel="shortcut icon" href="/public/static/index/pc/css/favicon.ico">
+  <meta name="mobile-agent" content="format=html5; url=http://m.loupan.com/gz/news/201906/3926572">
+  <meta name="mobile-agent" content="format=xhtml; url=http://m.loupan.com/gz/news/201906/3926572">
+  <link rel="alternate" media="only screen and(max-width: 640px)" href="/public/static/index/pc/css/3926572">
+  <title>2019上半年广州成交TOP10新鲜出炉！楼盘网合作占八成！-广州楼盘网</title>
+  <meta name="Keywords" content="2019上半年,广州楼市,住宅成交,Top10">
+  <meta name="description" content="今年上半年广州各区市场表现如何？谁更受市场青睐？且看分解——">
+  <link rel="stylesheet" media="all" href="/public/static/index/pc/css/base_fc7c93590b3e430480ab8250447088f4.css">
+  <link rel="stylesheet" media="all" href="/public/static/index/pc/css/nav_base.css">
+  <link rel="stylesheet" media="all" href="/public/static/index/pc/css/news-article.css?v5">
+  <link rel="stylesheet" media="all" href="/public/static/index/pc/css/style.css">
+  <script type="text/javascript" src="/public/static/index/pc/js/jquery.min.js"></script>
+ </head>
+ <body>
+  <div class="AD m-adv load-ad" id="A12716" data-adid="12716"></div>
+  <div class="AD m-adv load-ad" id="A12717" data-adid="12717"></div>
+  <div class="AD m-adv load-ad" id="A12718" data-adid="12718"></div>
+  <div class="AD m-adv load-ad" id="A12719" data-adid="12719"></div>
+  <div class="AD m-adv load-ad" id="A12720" data-adid="12720"></div>
+  <div class="header">
+   <div class="box">
+    <div class="logo">
+     <a href="/" title="楼盘网"></a>
+    </div>
+    <div class="city city_v3 city_zhaoshan"></div>
+        <div class="menu">
+     <div class="item cur ">
+      <a href="/">首页</a>
+     </div>
+
+      <div class="item ">
+      <a href="/index/build/index">新房</a>
+     </div>
+     <div class="item ">
+      <a href="/index/build/index">商业地产</a>
+     </div>
+     <div class="item ">
+      <a href="/index/article/index">楼讯</a>
+     </div>
+
+    <div class="userState login2"></div>
+   </div>
+    <div class="userState login2"></div>
+   </div>
+  </div>
+  <div class="m-menu">
+   <div class="g-bd">
+    <ul class="menu-nav f-fl">
+      <?php foreach($types as $type): ?>
+     <li class="this"><a class="m1" href="/index/article/index" title="<?php echo $type->name; ?>"><i class="tb-icon"></i><?php echo $type->name; ?></a></li>
+      <?php endforeach; ?>
+    </ul>
+    <div class="search f-fr">
+     <div class="search-box search-box-news"></div>
+    </div>
+   </div>
+  </div>
+  <div class="g-bd p-article">
+   <div class="g-wrap">
+    <div class="g-mn">
+     <div class="m-crumbs">
+<!--       <ul>
+       <li><a href="/">广州房地产</a> &gt; </li>
+       <li><a href="/news/">广州房产楼讯</a> &gt;</li>
+       <li><a href="/news/list-118.html">本网原创</a> &gt;</li>
+       <li>2019上半年广州成交TOP10新鲜出炉！楼盘网合作占八成！</li>
+      </ul> -->
+     </div>
+     <div class="article">
+      <div class="hd">
+       <h1 style="font-size: 30px"><?php echo $article->title; ?></h1>
+       <p class="meta"><span><?php echo $article->create_time; ?></span><!-- <span> 来源：楼盘网</span><span><a href="/news/list-118.html" target="_blank" class="cat"><i class="tb-icon"></i>本网原创</a></span><b>责任编辑：hejuanlian</b> --></p>
+      </div>
+      <?php echo $article->content; ?>
+     </div>
+     <div class="help help-form show_group"></div>
+     <div class="g-wrap">
+      <div class="g AD load-ad" id="A12623" data-adid="12623"></div>
+     </div>
+    </div>
+    <div class="g-sd">
+     <div class="g-sdc im-row"></div>
+     <div class="g-sdc">
+      <div class="m-hd">
+       <div class="title">
+        <a href="/news/" target="_blank">最新楼讯</a>
+       </div>
+      </div>
+      <div class="bd sdc-new-list">
+       <ul class="m-lp-list">
+       <?php foreach($hots as $key=>$hot): ?>
+       <li><i class="<?php if($key==0 || $key==1 || $key==2)echo 'hot';?>"><?php echo $key+1; ?></i><a href="/index/article/detail?id=<?php echo $hot->id; ?>" target="_blank"><?php echo $hot->title; ?></a></li>
+       <?php endforeach; ?>
+       </ul>
+      </div>
+     </div>
+     <div class="g-sdc">
+      <!--div class="qrcode"><img src="< ?php echo !empty($site->TwoDimensionalBarCode_news) ? (STATIC_URL . $site->TwoDimensionalBarCode_news) : (PUBLIC_DIR . '/public/static/index/pc/images/rss.png')?>" width="296" alt="订阅楼市资讯" /></div-->
+     </div>
+    </div>
+   </div>
+  </div>
+
+ </body>
+</html>

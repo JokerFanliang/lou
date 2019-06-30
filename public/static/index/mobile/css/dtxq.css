@@ -1,0 +1,52 @@
+*{ margin:0;padding: 0;}ul,ol{ list-style: none;}.clear{ clear: both;}.fl{ float: left;}.fr{ float: right;}a{text-decoration: none;}body{ background:#f2f3f5; font-size: 62.5%; font-family: "Microsoft Yahei",sans-serif;}
+/*------------------global css end------------*/
+.wrap{ padding: 1rem;}
+h1{ font-size: 1.3rem;color: #262626;font-weight: normal;overflow: hidden;}
+h1 sup{ font-size: 0.5rem;}
+h1 span { color: #555; font-size: 1rem; }
+strong { font-weight: bold; }
+.wrap {line-height: 1.8rem;font-size: 1rem;color: #333;letter-spacing: 0.05rem;}
+.wrap span.info_time{ color: #bcbcbc;padding: 0.5rem 0;font-size: 0.9rem; display: block;}
+.wrap p{ line-height: 1.8rem;font-size: 1rem;color: #333;text-indent: 2rem;letter-spacing: 0.05rem;}
+.wrap p sup{ font-size: 0.5rem;}
+.wrap p img{ width: 100%; padding: 0.5rem 0;display: block; margin: 0 auto; height:auto !important; }
+.wrap p strong { font-weight: bold; }
+.wrap .zb{float: right;font-size: 16px;color: #757575;margin-bottom: 10px;}
+.wrap .zb em{ font-style: normal; float: left; padding: 0; margin-right: -35px;}
+.contact{ position: fixed; bottom: 0.1rem; width: 100%;height: 3rem;}
+.tele-w{padding: 0 0.2rem 0.2rem 0.2rem;height: 3rem;}
+.tele{background: #1f78c8; border-radius: 0.2rem;}
+.tele a{ display: block;}
+.tele a:active{ background: #1e9ff0;}
+.tele p{ width: 17rem;height: 3rem;line-height: 3rem;color: #fff;  font-size: 1rem; letter-spacing: 0.01rem;margin: 0 auto;}
+.tele p span{ float: left;display: inline-block;width: 0.1rem;height: 2rem;background:url('../images/tele_03.png') no-repeat;background-size:1.2rem 1.2rem;background-position: 0.2rem 0.5rem;padding-left: 1.6rem;margin-top: 0.5rem;}
+.u-page {width: 265px;height: 35px;margin: 10px auto;text-align: center;color: #666;}
+.u-page a{ float: left;}
+.u-page .init, .u-page .js-disabled {background: #f6f6f6;cursor: default;color: #c1c1c1;}
+.u-btn {display: inline-block;width: 80px;height: 32px;border-radius: 1px;color: #666;border: 1px solid #dcdcdc;line-height: 32px;text-align: center;background: #fdfdfd;text-align: center;}
+.u-page .num {float: left;margin: 0 15px;}
+.wrap img{max-width: 100%;}
+
+.s-text{ position:relative;}
+#search_ul_loupan { width:100%; position:absolute; top:36px; left:0}
+#search_ul_loupan li {width:100%; text-indent:10px;  height:30px; line-height:30px; background:#f5f5f5; font-size:14px; color:#666;}
+#search_ul_loupan li a { color:#666; }
+
+@media screen and (max-width: 750px) {
+  .loupan_js_dd{ padding:10px !important;}
+  .loupan_js_dd1{ clear:both; width:100% !important;border: 0 !important;}
+  .loupan_js_dd1 form p span{ text-indent:0 !important; font-size:0.875rem;}
+  .loupan_js_dd2{ clear:both; width:100% !important; padding-bottom:20px; margin:0 !important;}
+  .loupan_js_dd2 p span:first-child{ min-width:none; max-width:28%; text-align:left !important;}
+  .loupan_js_dd2 p span:last-child{ max-width:72%;}
+  .loupan_js_dd2 p i{ font-style:normal;}
+  .loupan_js_dd3{ clear:both; width:100% !important; max-width:100% !important; height:auto !important; margin:0 !important;}
+  .loupan_js_dd3 img{ height:auto !important; padding:0 !important; margin-left:0 !important;}
+  .loupan_js_dd > div{ width:100% !important; }
+}
+
+.wrap p{ overflow:hidden;}
+.wrap p img{ float:left;}
+.wrap iframe{ display:block; width:100%; height:auto; }
+
+#loupanbm_js_div img{ width:auto; float:none; margin:10px auto 0; padding:0; }

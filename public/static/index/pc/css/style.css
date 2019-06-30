@@ -1,0 +1,21 @@
+a{ text-decoration:none; outline:none;}
+.ft .ui-grid-row{ width:1180px; margin:0 auto; background:#f4f4f4; padding:20px;}
+.ft .desc{ line-height:30px;}
+.ft .listbox{ overflow:hidden; padding-bottom:10px;}
+.ft .listbox h3{ color:#333; line-height:30px; float:left;}
+.ft .tab-click{ float:left;}
+.ft .tab-click li{ float:left;}
+.ft .tab-click li.cur{ background:#fff;}
+.ft .tab-click li a{ display:block; line-height:30px; padding:0 10px;}
+.ft .tab-text{ clear:both; background:#fff; padding:5px 10px;}
+.ft .tab-text li{ display:none; overflow:hidden;}
+.ft .tab-text li.cur{ display:block;}
+.ft .tab-text li a{ float:left; line-height:30px; margin-right:15px; font-size:12px;}
+.ft .linkSwitch{ padding-top:15px; }
+.ft .linkSwitch .tab{ overflow:hidden; margin-bottom:10px; }
+.ft .linkSwitch .tab .item{ color:#333; line-height:36px; font-size:12px; font-weight:bold; float:left; width:124px; line-height:40px; text-align:center; background:#ddd; cursor:pointer; margin-right:15px; }
+.ft .linkSwitch .tab .item.cur{ background:#999; color:#fff; }
+.ft .linkSwitch .link .item{ display:none; overflow:hidden; }
+.ft .linkSwitch .link .item.cur{ display:block; }
+.ft .linkSwitch .link .item a{ float:left; line-height:28px; margin-right:15px; }
+.ft .linkSwitch .link .item a:hover{ color:#fe5a00; }

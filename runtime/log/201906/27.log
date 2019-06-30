@@ -1,0 +1,88 @@
+---------------------------------------------------------------
+[ 2019-06-27T20:52:47+08:00 ] 127.0.0.1 GET /
+[ info ] lou/ [运行时间：0.358372s][吞吐率：2.79req/s] [内存消耗：1,395.23kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\lou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16b821612349a0-0d70c3901f6876-75276132-4a830-16b82161235af0; Hm_lvt_0dfeaebbbf5c68f04a3916b9439b4c7f=1561277958; Hm_lvt_d5bdb436a2ddb0894482c467a0851b5f=1561277958; Hm_lvt_c07a5cf91cdac070faa1e701f45995a8=1561277958; CNZZDATA30035949=cnzz_eid%3D999998725-1561277244-%26ntime%3D1561288057; CNZZDATA30080576=cnzz_eid%3D1971763803-1561272596-%26ntime%3D1561288850; CNZZDATA30090299=cnzz_eid%3D784854627-1561253907-%26ntime%3D1561291773; Hm_lvt_c3ecc996b09c60b59615ae824a065659=1561255613,1561295913; Hm_lvt_4900141126f29e4b4985573e9bcc03b8=1561255613,1561295913',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lou',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\lou\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\lou/application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-27T20:52:47+08:00 ] 127.0.0.1 GET /public/static/index/pc/js/require.js
+[ info ] lou/public/static/index/pc/js/require.js [运行时间：0.063088s][吞吐率：15.85req/s] [内存消耗：1,160.59kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\lou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16b821612349a0-0d70c3901f6876-75276132-4a830-16b82161235af0; Hm_lvt_0dfeaebbbf5c68f04a3916b9439b4c7f=1561277958; Hm_lvt_d5bdb436a2ddb0894482c467a0851b5f=1561277958; Hm_lvt_c07a5cf91cdac070faa1e701f45995a8=1561277958; CNZZDATA30035949=cnzz_eid%3D999998725-1561277244-%26ntime%3D1561288057; CNZZDATA30080576=cnzz_eid%3D1971763803-1561272596-%26ntime%3D1561288850; CNZZDATA30090299=cnzz_eid%3D784854627-1561253907-%26ntime%3D1561291773; Hm_lvt_c3ecc996b09c60b59615ae824a065659=1561255613,1561295913; Hm_lvt_4900141126f29e4b4985573e9bcc03b8=1561255613,1561295913',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lou/',
+  'purpose' => 'prefetch',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'lou',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/index/pc/js/require_js' => '',
+  'pc' => 'js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-27T20:52:48+08:00 ] 127.0.0.1 GET /public/static/index/pc/js/jquery-1.7.2.min.js
+[ info ] lou/public/static/index/pc/js/jquery-1.7.2.min.js [运行时间：0.012142s][吞吐率：82.36req/s] [内存消耗：1,160.61kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\lou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16b821612349a0-0d70c3901f6876-75276132-4a830-16b82161235af0; Hm_lvt_0dfeaebbbf5c68f04a3916b9439b4c7f=1561277958; Hm_lvt_d5bdb436a2ddb0894482c467a0851b5f=1561277958; Hm_lvt_c07a5cf91cdac070faa1e701f45995a8=1561277958; CNZZDATA30035949=cnzz_eid%3D999998725-1561277244-%26ntime%3D1561288057; CNZZDATA30080576=cnzz_eid%3D1971763803-1561272596-%26ntime%3D1561288850; CNZZDATA30090299=cnzz_eid%3D784854627-1561253907-%26ntime%3D1561291773; Hm_lvt_c3ecc996b09c60b59615ae824a065659=1561255613,1561295913; Hm_lvt_4900141126f29e4b4985573e9bcc03b8=1561255613,1561295913',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lou/',
+  'purpose' => 'prefetch',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'lou',
+)
+[ info ] [ PARAM ] array (
+  '/public/static/index/pc/js/jquery-1_7_2_min_js' => '',
+  'pc' => 'js',
+)
+[ info ] [ LOG ] INIT File

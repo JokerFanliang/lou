@@ -1,0 +1,429 @@
+---------------------------------------------------------------
+[ 2019-05-27T22:59:59+08:00 ] 127.0.0.1 GET /
+[ info ] book/ [运行时间：0.445156s][吞吐率：2.25req/s] [内存消耗：2,342.09kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\book\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'book',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\book\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\book\public/../application/index\view\index\index.html [ array (
+  0 => 'types',
+  1 => 'books',
+  2 => 'type_name',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001010s ] mysql:host=127.0.0.1;dbname=book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.024056s ]
+[ sql ] [ SQL ] SELECT * FROM `type` [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `book` [ RunTime:0.013483s ]
+[ sql ] [ SQL ] SELECT * FROM `book` [ RunTime:0.000397s ]
+---------------------------------------------------------------
+[ 2019-05-27T23:00:01+08:00 ] 127.0.0.1 GET /index/login/login
+[ info ] book/index/login/login [运行时间：0.029569s][吞吐率：33.82req/s] [内存消耗：1,368.07kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\book\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p9qbmgoi8pivl43rj6supf2jb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://book/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'book',
+)
+[ info ] [ PARAM ] array (
+  '/index/login/login' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\phpStudy\PHPTutorial\WWW\book\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\book\public/../application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-27T23:00:03+08:00 ] 127.0.0.1 GET /index/login/reg
+[ info ] book/index/login/reg [运行时间：0.070341s][吞吐率：14.22req/s] [内存消耗：1,540.06kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\book\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'reg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p9qbmgoi8pivl43rj6supf2jb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://book/index/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'book',
+)
+[ info ] [ PARAM ] array (
+  '/index/login/reg' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->reg[ D:\phpStudy\PHPTutorial\WWW\book\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\book\public/../application/index\view\login\reg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-27T23:00:12+08:00 ] 127.0.0.1 GET /
+[ info ] book/ [运行时间：0.061284s][吞吐率：16.32req/s] [内存消耗：2,342.38kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\book\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p9qbmgoi8pivl43rj6supf2jb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'book',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\book\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\book\public/../application/index\view\index\index.html [ array (
+  0 => 'types',
+  1 => 'books',
+  2 => 'type_name',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010682s ] mysql:host=127.0.0.1;dbname=book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.011612s ]
+[ sql ] [ SQL ] SELECT * FROM `type` [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `book` [ RunTime:0.009811s ]
+[ sql ] [ SQL ] SELECT * FROM `book` [ RunTime:0.000357s ]
+---------------------------------------------------------------
+[ 2019-05-27T23:00:18+08:00 ] 127.0.0.1 GET /index/index/detail?id=2
+[ info ] book/index/index/detail?id=2 [运行时间：0.129100s][吞吐率：7.75req/s] [内存消耗：2,540.35kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\book\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p9qbmgoi8pivl43rj6supf2jb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://book/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'book',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/detail' => '',
+  'id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->detail[ D:\phpStudy\PHPTutorial\WWW\book\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\book\public/../application/index\view\index\detail.html [ array (
+  0 => 'book',
+  1 => 'types',
+  2 => 'messages',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010637s ] mysql:host=127.0.0.1;dbname=book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.013885s ]
+[ sql ] [ SQL ] SELECT * FROM `type` [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `book` [ RunTime:0.010354s ]
+[ sql ] [ SQL ] SELECT * FROM `book` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `message` [ RunTime:0.015635s ]
+[ sql ] [ SQL ] SELECT * FROM `message` WHERE  `book_id` = 2 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `type` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2019-05-27T23:00:47+08:00 ] 127.0.0.1 GET /index/login/login
+[ info ] book/index/login/login [运行时间：0.017372s][吞吐率：57.56req/s] [内存消耗：1,368.14kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\book\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p9qbmgoi8pivl43rj6supf2jb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://book/index/index/detail?id=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'book',
+)
+[ info ] [ PARAM ] array (
+  '/index/login/login' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\phpStudy\PHPTutorial\WWW\book\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\book\public/../application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-27T23:00:51+08:00 ] 127.0.0.1 POST /index/login/login
+[ info ] book/index/login/login [运行时间：0.072528s][吞吐率：13.79req/s] [内存消耗：2,359.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\book\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p9qbmgoi8pivl43rj6supf2jb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://book/index/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://book',
+  'cache-control' => 'max-age=0',
+  'content-length' => '27',
+  'connection' => 'close',
+  'host' => 'book',
+)
+[ info ] [ PARAM ] array (
+  '/index/login/login' => '',
+  'username' => 'fl',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\phpStudy\PHPTutorial\WWW\book\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010455s ] mysql:host=127.0.0.1;dbname=book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016985s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'fl'  AND `password` = '4297f44b13955235245b2497399d7a93' LIMIT 1 [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2019-05-27T23:00:51+08:00 ] 127.0.0.1 GET /index/index/index.html
+[ info ] book/index/index/index.html [运行时间：0.059234s][吞吐率：16.88req/s] [内存消耗：2,357.19kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\book\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p9qbmgoi8pivl43rj6supf2jb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://book/index/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'book',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/index_html' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\book\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\book\public/../application/index\view\index\index.html [ array (
+  0 => 'types',
+  1 => 'books',
+  2 => 'type_name',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011187s ] mysql:host=127.0.0.1;dbname=book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.009516s ]
+[ sql ] [ SQL ] SELECT * FROM `type` [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `book` [ RunTime:0.010247s ]
+[ sql ] [ SQL ] SELECT * FROM `book` [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.007049s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000304s ]
+---------------------------------------------------------------
+[ 2019-05-27T23:00:56+08:00 ] 127.0.0.1 GET /index/user/index
+[ info ] book/index/user/index [运行时间：0.083915s][吞吐率：11.92req/s] [内存消耗：2,453.45kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\book\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p9qbmgoi8pivl43rj6supf2jb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://book/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'book',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/index' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->index[ D:\phpStudy\PHPTutorial\WWW\book\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\book\public/../application/index\view\user\index.html [ array (
+  0 => 'types',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000593s ] mysql:host=127.0.0.1;dbname=book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.030195s ]
+[ sql ] [ SQL ] SELECT * FROM `type` [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009706s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2019-05-27T23:00:57+08:00 ] 127.0.0.1 GET /index/order/index
+[ info ] book/index/order/index [运行时间：0.097782s][吞吐率：10.23req/s] [内存消耗：2,424.81kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\book\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=p9qbmgoi8pivl43rj6supf2jb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://book/index/user/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'book',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/index' => '',
+)
+[ info ] [ RUN ] app\index\controller\Order->index[ D:\phpStudy\PHPTutorial\WWW\book\application\index\controller\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\book\public/../application/index\view\order\index.html [ array (
+  0 => 'types',
+  1 => 'lists',
+  2 => 'type_id',
+  3 => 'sta',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000580s ] mysql:host=127.0.0.1;dbname=book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.022222s ]
+[ sql ] [ SQL ] SELECT * FROM `type` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009173s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.010972s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 2  AND `type` IN (1,2) [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `book` [ RunTime:0.009789s ]
+[ sql ] [ SQL ] SELECT * FROM `book` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000422s ]

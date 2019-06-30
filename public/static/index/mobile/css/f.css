@@ -1,0 +1,5 @@
+#footer{text-align: center;}
+#footer p{ text-align: center; padding: 10px 0;}
+#footer .webs{text-align: center;}
+#footer .webs a{ display:inline;font-size: 1.2em; display: inline-block; border-right: 1px solid #757575; color: #757575; padding: 0 10px;}
+#footer .webs .active{ color: #000;}

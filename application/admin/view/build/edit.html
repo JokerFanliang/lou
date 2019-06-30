@@ -1,0 +1,229 @@
+{include file="public/head"}
+<div id="dcMain">
+    <!-- 当前位置 -->
+    <div id="urHere">管理中心<b>></b><strong>楼盘</strong> </div>   
+    <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3><a href="javascript:history.go(-1);" class="actionBtn">返回列表</a>修改楼盘</h3>
+    <form action=""  method="post" enctype="multipart/form-data">
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr>
+                <td width="100" align="right">所属分类</td>
+                <td>
+                    <select name="types_id">
+                        <option value="0" <?php if($list->types_id==0)echo 'selected';?>>新房</option>
+                        <option value="1" <?php if($list->types_id==1)echo 'selected';?>>商业地产</option>
+                    </select>
+                </td>
+                <td width="100" align="right">楼盘名</td>
+                <td>
+                    <input type="text" required="required" name="name" size="40" class="inpMain" value="{$list->name}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">楼盘类型</td>
+                <td>
+                    <select name="type_id">
+                        {foreach $types as $type}
+                        <option value="{$type->id}" <?php if($list->type_id==$type->id)echo 'selected';?>>{$type->name}</option>
+                        {/foreach}
+                        
+                    </select>
+                </td>
+                <td width="100" align="right">楼盘户型</td>
+                <td>
+                    <select name="housetype_id">
+                        {foreach $housetypes as $housetype}
+                        <option value="{$housetype->id}" <?php if($list->housetype_id==$housetype->id)echo 'selected';?>>{$housetype->name}</option>
+                        {/foreach}
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">楼盘位置</td>
+                <td>
+                    <select name="position_id">
+                        {foreach $positions as $position}
+                        <option value="{$position->id}" <?php if($list->position_id==$position->id)echo 'selected';?>>{$position->position}</option>
+                        {/foreach}
+                        
+                    </select>
+                </td>
+                <td width="100" align="right">楼盘价格</td>
+                <td>
+                    <select name="price_id">
+                        {foreach $prices as $price}
+                        <option value="{$price->id}" <?php if($list->price_id==$price->id)echo 'selected';?>>{$price->price}</option>
+                        {/foreach}
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">开盘时间</td>
+                <td>
+                    <input type="text" required="required" name="start_time" size="40" class="inpMain" value="{$list->start_time}" />
+                </td>
+                <td width="100" align="right">起价</td>
+                <td>
+                    <input type="text" required="required" name="start_price" size="40" class="inpMain" value="{$list->start_price}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">联系电话</td>
+                <td>
+                    <input type="text" required="required" name="telephone" size="40" class="inpMain" value="{$list->telephone}" />
+                </td>
+                <td width="100" align="right">地址</td>
+                <td>
+                    <input type="text" required="required" name="address" size="40" class="inpMain" value="{$list->address}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">开盘描述</td>
+                <td>
+                    <input type="text" required="required" name="desc" size="40" class="inpMain" value="{$list->desc}" />
+                </td>
+                <td width="100" align="right">交房时间</td>
+                <td>
+                    <input type="text" required="required" name="give_time" size="40" class="inpMain" value="{$list->give_time}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">装修状况</td>
+                <td>
+                    <input type="text" required="required" name="renova" size="40" class="inpMain" value="{$list->renova}" />
+                </td>
+                <td width="100" align="right">备案名</td>
+                <td>
+                    <input type="text" required="required" name="beian" size="40" class="inpMain" value="{$list->beian}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">预售许可证</td>
+                <td>
+                    <input type="text" name="permit" class="inpMain" size="40" class="inpMain" value="{$list->permit}"  />
+                </td>
+                <td width="100" align="right">产权年限</td>
+                <td>
+                    <input type="text" required="required" name="year" size="40" class="inpMain" value="{$list->year}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">特色</td>
+                <td>
+                    <input type="text" required="required" name="item" size="40" class="inpMain" value="{$list->item}" />
+                </td>
+                <td width="100" align="right">物业公司</td>
+                <td>
+                    <input type="text" required="required" name="wy_company" size="40" class="inpMain" value="{$list->wy_company}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">物业类别</td>
+                <td>
+                    <input type="text" required="required" name="wy_type" size="40" class="inpMain" value="{$list->wy_type}" />
+                </td>
+                <td width="100" align="right">物业费</td>
+                <td>
+                    <input type="text" required="required" name="wx_money" size="40" class="inpMain" value="{$list->wx_money}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">开发商</td>
+                <td>
+                    <input type="text" required="required" name="create_company" size="40" class="inpMain" value="{$list->create_company}" />
+                </td>
+                <td width="100" align="right">车位</td>
+                <td>
+                    <input type="text" required="required" name="car_num" size="40" class="inpMain" value="{$list->car_num}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">建筑面积</td>
+                <td>
+                    <input type="text" required="required" name="build_s" size="40" class="inpMain" value="{$list->build_s}" />
+                </td>
+                <td width="100" align="right">占地面积</td>
+                <td>
+                    <input type="text" required="required" name="space_s" size="40" class="inpMain" value="{$list->space_s}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">规划户数</td>
+                <td>
+                    <input type="text" required="required" name="number" size="40" class="inpMain" value="{$list->number}" />
+                </td>
+                <td width="100" align="right">容积率</td>
+                <td>
+                    <input type="text" required="required" name="rjl" size="40" class="inpMain" value="{$list->rjl}" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">绿化率</td>
+                <td>
+                    <input type="text" required="required" name="lhl" size="40" class="inpMain" value="{$list->lhl}" />
+                </td>
+
+            </tr>
+            <tr>
+                <td width="100" align="right">项目简介</td>
+                <td>
+                    <textarea name="jianjie" cols="80" rows="10">{$list->jianjie}</textarea>
+                </td>
+                <td width="100" align="right">周边配套</td>
+                <td>
+                    <textarea name="zbpt" cols="80" rows="10">{$list->zbpt}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">小区配套</td>
+                <td>
+                    <textarea name="xqpt" cols="80" rows="10">{$list->xqpt}</textarea>
+                </td>
+                <td width="100" align="right">交通状况</td>
+                <td>
+                    <textarea name="trans" cols="80" rows="10">{$list->trans}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">审核</td>
+                <td>
+                    <select name="check">
+                        <option value="0" <?php if($list->check==0)echo 'selected';?>>待审核</option>
+                        <option value="1" <?php if($list->check==1)echo 'selected';?>>通过</option>
+                        <option value="2" <?php if($list->check==2)echo 'selected';?>>未通过</option>
+                    </select>
+                </td>
+                <td width="100" align="right">展示图</td>
+                <td>
+                    <input type="file" name="img" />
+                    <a href="{$list->img}" target="_blank">点击查看</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">是否热门</td>
+                <td>
+                    <select name="is_hot">
+                        <option value="0" <?php if($list->is_hot==0)echo 'selected';?>>是</option>
+                        <option value="1" <?php if($list->is_hot==1)echo 'selected';?>>否</option>
+                    </select>
+                </td>
+                <td width="100" align="right">房屋面积</td>
+                <td>
+                    <input type="text" required="required" name="area" size="40" class="inpMain" value="{$list->area}" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="hidden" name="id" class="btn" value="{$list->id}" />
+                    <input type="submit" name="submit" class="btn" value="修改" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</div>
+<div class="clear"></div>
+{include file="public/foot"}

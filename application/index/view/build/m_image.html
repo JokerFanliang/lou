@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-cn">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta content="yes" name="apple-mobile-web-app-capable"> 
+  <meta content="yes" name="apple-touch-fullscreen"> 
+  <meta content="telephone=no" name="format-detection"> 
+  <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no, viewport-fit=cover"> 
+  <title>广州越秀滨海新城相册_户型图_实景图-广州楼盘网</title> 
+  <meta name="Keywords" content="越秀滨海新城相册,越秀滨海新城户型图,越秀滨海新城实景图"> 
+  <meta name="description" content="广州楼盘网提供全套越秀滨海新城楼盘相册,包括户型图,实景图,外景图,样板房图,规划图,配套图,交通图等越秀滨海新城楼盘图片。"> 
+  <link rel="canonical" href="/public/static/index/mobile/css/list-7031803.html"> 
+  <!-- 此js必须在head标签里面 --> 
+  <script src="/public/static/index/mobile/js/flexible_css.js"></script> 
+  <script src="/public/static/index/mobile/js/flexible.js"></script> 
+  <link rel="stylesheet" href="/public/static/index/mobile/css/swiper.min.css"> 
+  <link rel="stylesheet" href="/public/static/index/mobile/css/base.css"> 
+  <link rel="stylesheet" href="/public/static/index/mobile/css/xinfang.css"> 
+ </head> 
+ <body> 
+  <div class="pages pages-cx"> 
+   <div class="head"> 
+    <a href="javascript:window.history.back();" class="back"></a> 
+    <p>{$build->name}</p> 
+  <!--   <span></span>  -->
+   </div> 
+   <!-- 楼盘相册 --> 
+<!--    <div class="choose"> 
+    <div data-num="5" class="item active">
+     实景图
+    </div> 
+    <div data-num="12" class="item ">
+     样板间
+    </div> 
+    <div data-num="1" class="item ">
+     配套图
+    </div> 
+    <div data-num="32" class="item ">
+     效果图
+    </div> 
+    <div data-num="1" class="item ">
+     位置图
+    </div> 
+   </div> --> 
+   <div class="swiper-container photos"> 
+    <div class="swiper-wrapper"> 
+      {foreach $imgs as $img}
+     <div class="swiper-slide" data-group="0"> 
+      <div class="swiper-zoom-container"> 
+       <img src="{$img->img}" alt="" > 
+      </div> 
+     </div> 
+     {/foreach}
+
+
+    </div> 
+   </div> 
+  </div> 
+  <!-- 底部浮动 --> 
+  <!-- 底部浮动 --> 
+  <div class="footFloat"> 
+   <input type="hidden" class="page_flag_name" value="loupan_detail" data-site_id="34" data-house_id="7031803"> 
+   <a rel="nofollow" href="javascript:" class="test-enter item" data-id="24994" data-site_id="34" data-house_id="7031803" data-need_idcard="0" data-title="预约看房" data-loupan="越秀滨海新城"> <p class="item-bnzf">预约看房</p> </a> 
+   <a href="javascript:" data-value="400-819-6579" class="item mobileTel"> <p class="item-dhzx">电话咨询</p> </a> 
+  </div> 
+  <!-- IM --> 
+  <script>
+    //参数必须要定义
+    var href = window.location.href;
+    var index = href.indexOf('?');
+    if (index != -1) {
+        href = href.substr(0 ,index);
+    }
+    var _chat = [{b:0,c:2,d:12,e:href,f:"34",g:"62",h:"7031803",i:"1",j:"219.144.212.23"},{data:{type:12,name:"越秀滨海新城",img:"http://static.loupan.com/upfile2/image/20170811/20170811144924_9278279.jpg",areaRoom:"南沙",price:"价格待定",fromUrl:href},desc:"客户给你发了一条楼盘信息",ext:""}];
+
+    //统一一键调用参数手机号b一定要传
+    //        (function(){var _im = document.createElement("div");_im.setAttribute('style','width:44px;height:44px;border-radius:50%;background:#16b955;color:#fffff;position:fixed;z-index:999999;bottom:80px;right:15px');_im.innerHTML="<img src='/////chat/img/chat-img.png' width='44' height='44' />";_im.addEventListener("click", function(){window.location.href='/////chat/mobile.html?_chat='+encodeURI(JSON.stringify(_chat));});document.body.appendChild(_im);})();
+    // 点击跳转
+    function im_chat (tel) {
+        _chat[0].b = tel;
+        window.location.href='//tools.loupan.com/chat/mobile.html?_chat='+encodeURI(JSON.stringify(_chat));
+    }
+</script> 
+  <script>
+    var version = '201905281638';
+</script> 
+  <script src="/public/static/index/mobile/js/require.js" data-main="http://public.loupan.com/public/assets_v4_m/js/house/house_xc.js?ver=201905281638"></script> 
+  <!-- baidu熊掌号 --> 
+  <script src="/public/static/index/mobile/js/c.js"></script> 
+
+ </body>
+</html>
