@@ -33,14 +33,12 @@
     <div class="banner">
      <div class="flexslider">
       <ul class="slides">
-       <li data-img="/tgimg/media/2019/0617/1746373770938.jpg">
-        <a href="http://gz.loupan.com/loupan/7098686.html" target="_blank" rel="nofollow" style="background-image:url(/public/static/index/pc/images/1746373770938.jpg); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/static/index/pc/images/1746373770938.jpg',sizingMethod='scale');">
+        {foreach $banners as $banner}
+       <li data-img="{$banner->img}">
+        <a href="#" rel="nofollow" style="background-image:url({$banner->img}); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{$banner->img}',sizingMethod='scale');">
         </a>
        </li>
-       <li data-img="/tgimg/media/2019/0617/1746373770938.jpg">
-        <a href="http://gz.loupan.com/loupan/7098686.html" target="_blank" rel="nofollow" style="background-image:url(/public/static/index/pc/images/1746373770938.jpg); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/static/index/pc/images/1746373770938.jpg',sizingMethod='scale');">
-        </a>
-       </li>
+       {/foreach}
       </ul>
      </div>
      <div class="search">

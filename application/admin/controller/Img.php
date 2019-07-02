@@ -13,7 +13,13 @@ class Img extends Base
 
     public function index()
     {
-        $lists=ImgModel::order('create_time','desc')->paginate(10);
+        if(getAdminType()==1){
+            $ids=BuildModel::where('user_id',user('id'))->column('id');
+            $lists=ImgModel::wherein('build_id',$ids)->order('create_time','desc')->paginate(10);
+        }else{
+            $lists=ImgModel::order('create_time','desc')->paginate(10);
+        }
+        
         return view("",compact('lists'));
     }
 

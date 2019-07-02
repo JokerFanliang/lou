@@ -1,8 +1,9 @@
 <div id="dcLeft">
     <div id="menu">
         <ul>
-            <li><a href="/admin/Admin/index"><i class="manager"></i><em>网站管理员</em></a></li>
+            <li><a href="/admin/Admin/index"><i class="manager"></i><em>管理员</em></a></li>
         </ul>
+        {if condition="getAdminType()==0"}
         <ul>
             <li><a href="/admin/Banner/index"><i class="manager"></i><em>banner管理</em></a></li>
         </ul>
@@ -17,15 +18,18 @@
             <li><a href="/admin/Articletype/index"><i class="manager"></i><em>楼讯类型</em></a></li>
             <li><a href="/admin/Article/index"><i class="manager"></i><em>楼讯内容</em></a></li>
         </ul>
+        {/if}
         <ul>
             <li><a href="/admin/Build/index"><i class="manager"></i><em>楼盘管理</em></a></li>
             <li><a href="/admin/Buildarticle/index"><i class="manager"></i><em>动态</em></a></li>
             <li><a href="/admin/Img/index"><i class="manager"></i><em>楼盘图</em></a></li>
             <li><a href="/admin/House/index"><i class="manager"></i><em>户型</em></a></li>
         </ul>
+        {if condition="getAdminType()==0"}
         <ul>
             <li><a href="/admin/Enlist/index"><i class="manager"></i><em>团购报名</em></a></li>
             <li><a href="/admin/Find/index"><i class="manager"></i><em>帮您找房</em></a></li>
         </ul>
+        {/if}
     </div>
 </div>

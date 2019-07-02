@@ -7,13 +7,7 @@
     <form action=""  method="post" id="form" enctype="multipart/form-data">
         <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
             <tr>
-                <td align="right">链接</td>
-                <td>
-                    <input type="text" name="link" size="40" class="inpMain" value="{$list->link}" />
-                </td>
-            </tr>
-            <tr>
-                <td width="100" align="right">图片</td>
+                <td width="100" align="right">图片(1920*460)</td>
                 <td>
                     <input type="file" name="img">
                 </td>
@@ -24,7 +18,18 @@
                     <img width="200px" src="{$list->img}">
                 </td>
             </tr>
-
+            <tr>
+                <td width="100" align="right">缩略图片</td>
+                <td>
+                    <input type="file" name="small">
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">缩略原图</td>
+                <td>
+                    <img width="200px" src="{$list->small}">
+                </td>
+            </tr>
             <tr>
                 <td></td>
                 <td>

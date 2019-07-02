@@ -8,16 +8,18 @@
     }
 </script>
 <div id="dcMain"><!-- 当前位置 -->
-    <div id="urHere">管理中心<b>></b><strong>网站管理员</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <div id="urHere">管理中心<b>></b><strong>管理员</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
     <h3>
-<!--         {if condition="getAdminType()==0"}
+        {if condition="getAdminType()==0"}
         <a href="{:url('Admin/add')}" class="actionBtn">添加管理员</a>
-        {/if}网站管理员 -->
+        {/if}网站管理员
     </h3>
         <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
      <tr>
          <th width="30" align="center">编号</th>
-         <th align="center">管理员名称</th>
+         <th align="center">登录账号</th>
+         <th align="center">姓名</th>
+         <th align="center">手机号</th>
          <th align="center">添加时间</th>
          <th align="center">操作</th>
      </tr>
@@ -26,6 +28,8 @@
 
       <td align="center">{$list->id}</td>
       <td align="center">{$list->username}</td>
+      <td align="center">{$list->realname}</td>
+      <td align="center">{$list->phone}</td>
       <td align="center">{$list->create_time}</td>
       <td align="center">
         <a href="{:url('Admin/edit')}?id={$list->id}">编辑</a> 

@@ -12,6 +12,10 @@ class Login extends Controller
         if($_POST)
         {
             $data=$this->request->post();
+            if(!captcha_check($data['verifyCode'])) {
+                // 校验失败
+                $this->error('验证码不正确');
+            }
             $username = $data['username'];
             $password = md5($data['password']);
             $query['username'] = $username;

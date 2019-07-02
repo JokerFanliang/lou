@@ -9,6 +9,7 @@ use app\model\TypeModel;
 use app\model\ArticleModel;
 use app\model\HousetypeModel;
 use app\model\PositionModel;
+use app\model\BannerModel;
 
 class Index extends Controller
 {
@@ -24,9 +25,10 @@ class Index extends Controller
         $articles=ArticleModel::order('create_time','desc')->limit(0,8)->select();
         $new_builds=BuildModel::where('del',0)->order('create_time','desc')->limit(0,10)->select();
         $bus_builds=BuildModel::where('del',0)->order('create_time','desc')->limit(0,10)->select();
+        $banners=BannerModel::select();
         $bla=viewType();
         $blade=$bla==1 ? "m_index" : "index";
-        return view($blade,compact('types','positions',"housetypes",'hot_builds','newup_builds','newdown_builds','busup_builds','busdown_builds','articles','new_builds','bus_builds'));
+        return view($blade,compact('types','positions',"housetypes",'hot_builds','newup_builds','newdown_builds','busup_builds','busdown_builds','articles','new_builds','bus_builds','banners'));
     }
 
 

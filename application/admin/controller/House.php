@@ -13,7 +13,13 @@ class House extends Base
 
     public function index()
     {
-        $lists=HouseModel::order('create_time','desc')->paginate(10);
+        if(getAdminType()==1){
+            $ids=BuildModel::where('user_id',user('id'))->column('id');
+            $lists=HouseModel::wherein('build_id',$ids)->order('create_time','desc')->paginate(10);
+        }else{
+            $lists=HouseModel::order('create_time','desc')->paginate(10);
+        }
+        
         return view("",compact('lists'));
     }
 

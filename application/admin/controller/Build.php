@@ -16,7 +16,12 @@ class Build extends Base
 
     public function index()
     {
-        $lists=BuildModel::order('create_time','desc')->paginate(10);
+        if(getAdminType()==0){
+            $lists=BuildModel::order('create_time','desc')->paginate(10);
+        }else{
+            $lists=BuildModel::where('user_id',user('id'))->order('create_time','desc')->paginate(10);
+        }
+        
         return view("",compact('lists'));
     }
 
@@ -59,6 +64,8 @@ class Build extends Base
             $build->permit=$data['permit'];
             $build->is_hot=$data['is_hot'];
             $build->area=$data['area'];
+            $build->keys=$data['keys'];
+            $build->descr=$data['descr'];
             if(request()->file('img')){
                 $image = Image::open(request()->file('img'));
                 $path=saveImg($image);
@@ -115,6 +122,8 @@ class Build extends Base
             $build->permit=$data['permit'];
             $build->is_hot=$data['is_hot'];
             $build->area=$data['area'];
+            $build->keys=$data['keys'];
+            $build->descr=$data['descr'];
             if(request()->file('img')){
                 $image = Image::open(request()->file('img'));
                 $path=saveImg($image);

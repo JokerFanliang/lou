@@ -7,21 +7,22 @@
     <form action=""  method="post" id="form" enctype="multipart/form-data">
         <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
             <tr>
-                <td align="right">链接</td>
+                <td width="100" align="right">图片(1920*460)</td>
                 <td>
-                    <input type="text"  name="link" size="40" class="inpMain" value="" />
+                    <input type="file" name="img">
                 </td>
             </tr>
             <tr>
-                <td width="100" align="right">图片</td>
+                <td width="100" align="right">缩略图片</td>
                 <td>
-                    <input type="file" name="img">
+                    <input type="file" name="small">
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td>
                     <div >
+                        <input type="hidden" name="id" value="1">
                         <input type="submit" value="添加" class="btn ">
                     </div>
                 </td>

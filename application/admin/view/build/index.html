@@ -17,6 +17,7 @@
      <tr>
          <th width="30" align="center">编号</th>
          <th align="center">楼盘名</th>
+         <th align="center">管理员</th>
          <th align="center">添加时间</th>
          <th align="center">操作</th>
      </tr>
@@ -25,6 +26,7 @@
 
       <td align="center">{$list->id}</td>
       <td align="center">{$list->name}</td>
+      <td align="center">{$list->user->realname}</td>
       <td align="center">{$list->create_time}</td>
       <td align="center">
         <a href="{:url('Build/edit')}?id={$list->id}">编辑</a> 

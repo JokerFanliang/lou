@@ -21,11 +21,15 @@ class Banner extends Base
         if($_POST){
             $data=request()->post();
             $banner=new BannerModel();
-            $banner->link=$data['link'];
             if(request()->file('img')){
                 $image = Image::open(request()->file('img'));
                 $path=saveImg($image);
                 $banner->img=$path;            
+            }
+            if(request()->file('small')){
+                $image = Image::open(request()->file('small'));
+                $path=saveImg($image);
+                $banner->small=$path;            
             }
             $banner->save();
             $this->redirect("Banner/index");
@@ -40,11 +44,15 @@ class Banner extends Base
             $data=request()->post();
             $id=$data['id'];
             $banner=BannerModel::find($id);
-            $banner->link=$data['link'];
             if(request()->file('img')){
                 $image = Image::open(request()->file('img'));
                 $path=saveImg($image);
                 $banner->img=$path;            
+            }
+            if(request()->file('small')){
+                $image = Image::open(request()->file('small'));
+                $path=saveImg($image);
+                $banner->small=$path;            
             }
             $banner->save();
             $this->redirect("Banner/index");

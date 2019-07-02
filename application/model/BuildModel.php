@@ -6,6 +6,7 @@ use app\model\TypeModel;
 use app\model\HousetypeModel;
 use app\model\PositionModel;
 use app\model\PriceModel;
+use app\model\AdminModel;
 
 class BuildModel extends Model
 {
@@ -31,5 +32,10 @@ class BuildModel extends Model
     public function position()
     {
         return $this->hasOne('PositionModel','id','position_id');
+    } 
+
+    public function user()
+    {
+        return $this->hasOne('AdminModel','id','user_id');
     } 
 }

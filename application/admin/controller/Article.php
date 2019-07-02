@@ -23,6 +23,8 @@ class Article extends Base
             $data=request()->post();
             $article=new ArticleModel();
             $article->title=$data['title'];
+            $article->keys=$data['keys'];
+            $article->desc=$data['desc'];
             $article->type_id=$data['type_id'];
             $article->content=$data['content'];
             if(request()->file('img')){
@@ -45,6 +47,8 @@ class Article extends Base
             $id=$data['id'];
             $article=ArticleModel::find($id);
             $article->title=$data['title'];
+            $article->keys=$data['keys'];
+            $article->desc=$data['desc'];
             $article->type_id=$data['type_id'];
             $article->content=$data['content'];
             if(request()->file('img')){

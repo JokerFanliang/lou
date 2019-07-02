@@ -24,6 +24,8 @@ class AdminModel extends Model
             return ['flag'=>false,'msg'=>'该用户名已存在'];
         $user=new AdminModel();
         $user->username = trim($data['user_name']);
+        $user->realname = trim($data['realname']);
+        $user->phone = trim($data['phone']);
         $user->password = md5(trim($data['password']));
         $user->types = 1;
 		if($user->save())  	
@@ -39,8 +41,10 @@ class AdminModel extends Model
 			return ['flag'=>false,'msg'=>'该用户名已存在'];
 		$user=AdminModel::find($user_id);
 		$user->username=trim($data['username']);
+        $user->realname = trim($data['realname']);
+        $user->phone = trim($data['phone']);
 		if($data['password'])
-			$user->password=trim($data['password']);
+			$user->password=md5(trim($data['password']));
 		if($user->save())  	
 			return ['flag'=>true,'msg'=>'修改成功'];
 		return ['flag'=>false,'msg'=>'修改失败'];

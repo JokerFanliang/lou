@@ -73,13 +73,13 @@
 
         <div class="swiper-container banner">
             <div class="swiper-wrapper">
-
+                {foreach $banners as $banner}
                 <div class="swiper-slide">
-                    <a href="http://gz.loupan.com/loupan/7031803.html">
-                        <img src="other/75" onerror="this.src='/public/static/index/mobile/images/lazy_img.jpg'" alt="越秀滨海新城">
+                    <a href="#">
+                        <img src="{$banner->img}" alt="">
                     </a>
                 </div>
-                                           
+                {/foreach}                     
             </div>
             <div class="swiper-pagination"></div>
         </div>
